@@ -1,0 +1,138 @@
+.photo-card {
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.02);
+}
+
+.photo-card {
+  margin-bottom: 30px;
+}
+
+/* el contenedor con posición relativa */
+.photo-thumb {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* imagen con altura uniforme */
+.photo-thumb img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* pie de foto superpuesto y con sombra degradada */
+.photo-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  box-sizing: border-box;
+}
+.photo-caption h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.photo-caption p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.photo-caption h3,
+.photo-caption p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+.modal-trigger {
+  cursor: pointer;
+}
+
+
+
+#caption {
+  text-align: center;
+  color: #ccc;
+  margin-top: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#caption h3 {
+  color: #eee; /* gris más claro para el título */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#caption p {
+  color: #ccc; /* mantiene el gris clarito que ya usás */
+  font-size: 14px;
+}
+
