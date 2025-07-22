@@ -145,7 +145,6 @@ section {
   overflow: hidden;
 }
 
-<style>
 .logo {
   position: relative;
   z-index: 9999;
@@ -158,7 +157,6 @@ section {
   pointer-events: auto;
   z-index: 9999;
 }
-</style>
 
 .menu {
   float: right;
@@ -1357,19 +1355,22 @@ footer .contact-info ul li a {
   padding: 10px;
   transition: bottom 0.3s;
 }
+.gallery-item:hover .caption {
+  bottom: 0;
+
+}
+}
 
 /* Personalización para la sección de acta-documentos */
 .acta-documentos .form-control {
     border-radius: 20px;
-    border: 1px solid #337ab7;
+    border: 1px solid #7fca0f;
 }
 .acta-documentos table th {
-    background: #337ab7;
+    background: #7fca0f;
     color: #fff;
 }
 .acta-documentos table td a {
-    color: #337ab7;
+    color: #7fca0f;
     font-weight: bold;
-}
-
 }
