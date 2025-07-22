@@ -19,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/filter.js"></script>
 
         <!--
 	Venue Template
@@ -129,6 +130,43 @@
                 </div>
             </div>
         </div>
+        </section>
+
+        <section class="acta-documentos" style="margin-top:40px;">
+            <h2>Acta de Documentos</h2>
+            <input type="text" id="search" placeholder="Buscar documento...">
+            <select id="categoryFilter">
+                <option value="">Todas las categorías</option>
+                <option value="Informe">Informe</option>
+                <option value="Acuerdo">Acuerdo</option>
+                <option value="Anexo">Anexo</option>
+            </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Enlace</th>
+                    </tr>
+                </thead>
+                <tbody id="documentTable">
+                    <tr data-category="Informe">
+                        <td>Informe de Actividades</td>
+                        <td>Informe</td>
+                        <td><a href="docs/informe.pdf" target="_blank">Ver</a></td>
+                    </tr>
+                    <tr data-category="Acuerdo">
+                        <td>Acuerdo de Colaboración</td>
+                        <td>Acuerdo</td>
+                        <td><a href="docs/acuerdo.pdf" target="_blank">Ver</a></td>
+                    </tr>
+                    <tr data-category="Anexo">
+                        <td>Anexo Técnico</td>
+                        <td>Anexo</td>
+                        <td><a href="docs/anexo.pdf" target="_blank">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         
