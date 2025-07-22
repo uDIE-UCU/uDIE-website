@@ -132,44 +132,54 @@
         </div>
         </section>
 
-        <section class="acta-documentos" style="margin-top:40px;">
-            <h2>Acta de Documentos</h2>
-            <input type="text" id="search" placeholder="Buscar documento...">
-            <select id="categoryFilter">
-                <option value="">Todas las categorías</option>
-                <option value="Informe">Informe</option>
-                <option value="Acuerdo">Acuerdo</option>
-                <option value="Anexo">Anexo</option>
-            </select>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Categoría</th>
-                        <th>Enlace</th>
-                    </tr>
-                </thead>
-                <tbody id="documentTable">
-                    <tr data-category="Informe">
-                        <td>Informe de Actividades</td>
-                        <td>Informe</td>
-                        <td><a href="docs/informe.pdf" target="_blank">Ver</a></td>
-                    </tr>
-                    <tr data-category="Acuerdo">
-                        <td>Acuerdo de Colaboración</td>
-                        <td>Acuerdo</td>
-                        <td><a href="docs/acuerdo.pdf" target="_blank">Ver</a></td>
-                    </tr>
-                    <tr data-category="Anexo">
-                        <td>Anexo Técnico</td>
-                        <td>Anexo</td>
-                        <td><a href="docs/anexo.pdf" target="_blank">Ver</a></td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <section class="acta-documentos section-heading" style="margin-top:40px;">
+            <div class="container">
+                <h2 class="text-center">Acta de Documentos</h2>
+                <div class="row" style="margin-bottom:20px;">
+                    <div class="col-md-6">
+                        <input type="text" id="search" class="form-control" placeholder="Buscar documento...">
+                    </div>
+                    <div class="col-md-6">
+                        <select id="categoryFilter" class="form-control">
+                            <option value="">Todas las categorías</option>
+                            <option value="Informe">Informe</option>
+                            <option value="Acuerdo">Acuerdo</option>
+                            <option value="Anexo">Anexo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody id="documentTable">
+                            <tr data-category="Informe">
+                                <td>Informe de Actividades</td>
+                                <td>Informe</td>
+                                <td><a href="docs/informe.pdf" target="_blank">Ver</a></td>
+                            </tr>
+                            <tr data-category="Acuerdo">
+                                <td>Acuerdo de Colaboración</td>
+                                <td>Acuerdo</td>
+                                <td><a href="docs/acuerdo.pdf" target="_blank">Ver</a></td>
+                            </tr>
+                            <tr data-category="Anexo">
+                                <td>Anexo Técnico</td>
+                                <td>Anexo</td>
+                                <td><a href="docs/anexo.pdf" target="_blank">Ver</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
-        
         <footer>
             <div class="container">
                 <div class="row">
