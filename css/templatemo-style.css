@@ -38,7 +38,7 @@ section {
   font-size: 17px;
   display: block;
   margin: 0px;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 .section-heading h2 {
@@ -53,19 +53,20 @@ section {
 
 .blue-button a {
   display: inline-block;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   color: #fff;
   font-size: 15px;
+  border-radius: 25px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
-  border: 2px solid #7FCA0F;
+  border: 2px solid #6B8E7A;
   transition: all 0.5s;
 }
 
 .blue-button a:hover {
   background-color: transparent;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 
@@ -123,7 +124,7 @@ section {
   /* content: 'â˜°'; */
   content: '\2261';
   display: inline-block;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   font-size: 36px;
   font-style: normal;
   font-weight: normal;
@@ -195,11 +196,11 @@ section {
 
 #primary-nav li > a:hover,
 #primary-nav li.selected > a {
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 .sub-menu {
-  border-top: 3px solid #7FCA0F;
+  border-top: 3px solid #6B8E7A;
 }
 
 .sub-menu li a {
@@ -357,7 +358,7 @@ section.banner {
 .banner .banner-caption .line-dec {
   width: 80px;
   height: 3px;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
 }
 
 .banner .banner-caption h2 {
@@ -379,7 +380,7 @@ section.banner {
 }
 
 .banner .submit-form {
-  border-bottom: 5px solid #7FCA0F;
+  border-bottom: 5px solid #6B8E7A;
   background-color: #fff;
   padding: 15px;
 }
@@ -437,18 +438,18 @@ section.banner {
   text-align: center;
   display: inline-block;
   border-radius: 0px;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   font-size: 17px;
   letter-spacing: 0.5px;
   color: #fff;
   font-weight: 600;
-  border: 2px solid #7FCA0F;
+  border: 2px solid #6B8E7A;
   transition: all 0.5s;
 }
 
 .submit-form button:hover {
   background-color: transparent;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 .popular-places .owl-nav {
@@ -470,7 +471,7 @@ section.banner {
 }
 
 .popular-places .owl-dots .active span {
-  background-color: #7FCA0F!important;
+  background-color: #6B8E7A!important;
 }
 
 .popular-places .owl-dots button {
@@ -581,7 +582,7 @@ section.featured-places {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   border-radius: 50%;
 }
 
@@ -620,7 +621,7 @@ section.featured-places {
 .featured-places .featured-item .down-content span {
   display: block;
   font-size: 13px;
-  color: #7FCA0F;
+  color: #6B8E7A;
   margin-bottom: 15px;
 }
 
@@ -657,7 +658,7 @@ section.featured-places {
 }
 
 .featured-places .featured-item .down-content .text-button a:hover {
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 .featured-places .featured-item {
@@ -690,6 +691,25 @@ section.microdie-members .people-item h4 {
   color:  #232323;
   margin-top: 0px;
   margin-bottom:  25px;
+}
+
+.microdie-members .people-item a {
+    color: #6B8E7A;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 13px;
+    transition: color 0.3s;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    display: inline;
+}
+.microdie-members .people-item a:hover {
+    color: #232323;
+    background: none;
 }
 
 .microdie-members .left-content .blue-button {
@@ -803,7 +823,7 @@ section.our-services .service-item h4 {
 }
 
 a.active:after {
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -907,7 +927,7 @@ section.acta-documentos {
 }
 
 section.pricing-tables {
-    background: linear-gradient(180deg, #f8f8f8 0%, #eaf6e2 100%);
+    background: linear-gradient(180deg, #f8f8f8 0%, #A3C9A8 100%);
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(127,202,15,0.05);
     padding-top: 40px;
@@ -926,7 +946,7 @@ section.pricing-tables .table-item {
 }
 
 section.pricing-tables .table-item .top-content {
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   padding: 30px;
   color: #fff;
   border-top-right-radius: 10px;
@@ -966,7 +986,7 @@ section.pricing-tables .table-item ul li a {
 }
 
 section.pricing-tables .table-item ul li a:hover {
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 section.contact .section-heading {
@@ -981,18 +1001,18 @@ section.contact .section-heading {
 /* Modal button */
 .modal-btn {
   display: inline-block;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
-  border: 2px solid #7FCA0F;
+  border: 2px solid #6B8E7A;
   transition: all 0.5s;
 }
 .modal-btn:hover {
   background-color: transparent;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 /* Modal */
@@ -1058,24 +1078,24 @@ section.contact .section-heading {
 
 .modal-content .left-content button {
   display: inline-block;
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
   border-radius: 0px;
-  border: 2px solid #7FCA0F;
+  border: 2px solid #6B8E7A;
   transition: all 0.5s;
 }
 
 .modal-content .left-content button:hover {
   background-color: transparent;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 .modal-content .right-content {
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
   padding: 30px 30px 65px 30px;
   color: #fff;
 }
@@ -1140,14 +1160,14 @@ section.contact .section-heading {
   text-align: center;
   line-height: 60px;
   background-color: #fff;
-  color: #7FCA0F;
+  color: #6B8E7A;
   border-radius: 50%;
   opacity: 1;
 }
 
 .modal-content .close:hover {
   background-color: #fff;
-  color: #7FCA0F;
+  color: #6B8E7A;
 }
 
 /* Keyframes */
@@ -1213,7 +1233,7 @@ footer .about-veno p {
 }
 
 footer .about-veno ul li a:hover {
-  background-color: #7FCA0F;
+  background-color: #6B8E7A;
 }
 
 footer .useful-links ul li {
@@ -1229,11 +1249,11 @@ footer .useful-links ul li a {
 }
 
 footer .useful-links ul li a:hover {
-  color: #7fca0f;
+  color: #6B8E7A;
 }
 
 footer .useful-links ul li i {
-  color: #7fca0f;
+  color: #6B8E7A;
   font-size: 6px;
   position: relative;
   top: -3px;
@@ -1259,7 +1279,7 @@ footer .contact-info ul li span {
 
 footer .contact-info ul li a {
   font-size: 13px;
-  color: #7fca0f;
+  color: #6B8E7A;
   letter-spacing: 0.5px;
   text-decoration: none;
 }
@@ -1277,7 +1297,7 @@ footer .contact-info ul li a {
 
 .sub-footer a {
   text-decoration: none;
-  color: #7fca0f;
+  color: #6B8E7A;
 }
 
 
@@ -1361,7 +1381,7 @@ footer .contact-info ul li a {
     top: 5px;
     width: 10px;
     height: 10px;
-    background-color: green;
+    background-color: A3C9A8;
   }
 
   .gallery-item {
@@ -1392,14 +1412,14 @@ footer .contact-info ul li a {
 /* Personalización para la sección de acta-documentos */
 .acta-documentos .form-control {
     border-radius: 20px;
-    border: 1px solid #7fca0f;
+    border: 1px solid #6B8E7A;
 }
 .acta-documentos table th {
-    background: #7fca0f;
+    background: #6B8E7A;
     color: #fff;
 }
 .acta-documentos table td a {
-    color: #7fca0f;
+    color: #6B8E7A;
     font-weight: bold;
 }
 /* Centrado horizontal para la fila de categorías */
