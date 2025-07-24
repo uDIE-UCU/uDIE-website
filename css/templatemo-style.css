@@ -887,7 +887,32 @@ section#video-container {
   border-radius: 50%;
 }
 
+section.pricing-tables {
+    margin-bottom: 60px; /* Espaciado extra debajo de Categories */
+}
 
+section.acta-documentos {
+    margin-top: 60px !important; /* Espaciado extra arriba de Our projects */
+}
+
+.section-heading h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #232323;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+section.pricing-tables {
+    background: linear-gradient(180deg, #f8f8f8 0%, #eaf6e2 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(127,202,15,0.05);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 section.pricing-tables .table-item {
   text-align: center;
@@ -895,6 +920,9 @@ section.pricing-tables .table-item {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 0px 0px 40px 0px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 section.pricing-tables .table-item .top-content {
@@ -1373,4 +1401,10 @@ footer .contact-info ul li a {
 .acta-documentos table td a {
     color: #7fca0f;
     font-weight: bold;
+}
+/* Centrado horizontal para la fila de categorías */
+.custom-center-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre columnas, opcional */
 }
