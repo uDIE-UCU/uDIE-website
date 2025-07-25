@@ -915,6 +915,10 @@ section.acta-documentos {
     margin-top: 60px !important; /* Espaciado extra arriba de Our projects */
 }
 
+.acta-documentos select {
+    cursor: pointer;
+}
+
 .section-heading h2{
     text-align: center;
     font-size: 32px;
