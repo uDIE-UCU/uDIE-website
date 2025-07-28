@@ -17,4 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchInput.addEventListener('input', filterTable);
     categoryFilter.addEventListener('change', filterTable);
+
+    // Botones para filtrar por categoría
+    document.querySelectorAll('.filter-category-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var category = btn.getAttribute('data-category');
+            categoryFilter.value = category;
+            categoryFilter.dispatchEvent(new Event('change'));
+        });
+    });
 });
