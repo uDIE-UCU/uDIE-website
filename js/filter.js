@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = row.cells[0].textContent.toLowerCase();
             const rowCategory = row.getAttribute('data-category');
             const matchesSearch = name.includes(search);
-            const matchesCategory = !category || rowCategory === category;
+            const matchesCategory = !category || rowCategory.toLowerCase().includes(category.toLowerCase());
             row.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
         });
     }
