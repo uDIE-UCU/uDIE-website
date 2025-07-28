@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             var category = btn.getAttribute('data-category');
             categoryFilter.value = category;
             categoryFilter.dispatchEvent(new Event('change'));
+            // Scroll suave al filtro
+            var filterSection = document.getElementById('filter-section');
+            if (filterSection) {
+                filterSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         });
     });
 });
