@@ -1347,6 +1347,7 @@ footer .contact-info ul li a {
   .featured-places .featured-item .down-content .first-button {
     border-right: none;
   }
+  
 
   section.our-services .service-item {
     margin-bottom: 30px;
@@ -1409,6 +1410,7 @@ footer .contact-info ul li a {
   position: relative;
   overflow: hidden;
 }
+
 .gallery-item img {
   transition: transform 0.5s ease;
 }
