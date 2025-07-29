@@ -1046,6 +1046,23 @@ section.contact .section-heading {
 .modal-content .left-content {
   padding: 30px;
 }
+.left-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.left-content ul li i {
+    font-size: 0.85em;
+    margin-right: 6px;
+    color: #666; /* gris elegante */
+    vertical-align: middle;
+}
+
+.left-content ul li i {
+    margin-right: 8px;
+    color: #6B8E7A; /* o el color institucional del sitio */
+}
+
 
 .modal-content .left-content input {
   border-radius: 0px;
