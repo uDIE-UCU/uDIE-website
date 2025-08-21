@@ -63,41 +63,68 @@
         </header>
     </div>
 
-    <section id="publications" class="publications-section">
+<section id="publications" class="publications-section">
   <div class="container">
+    <p class="disclaimer">...</p>
+
     <div class="section-heading">
       <h2>Publications</h2>
-      <p class="disclaimer">
-        This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by authors or by other copyright holders.
-      </p>
+      <input type="text" id="searchInput" placeholder="Search by title, author, journal, year..." />
     </div>
 
-    <!-- Journals -->
+    <div id="publicationList">
+
     <div class="pub-category">
         <h3>International Journals</h3>
 
         <div class="pub-year">
             <h4>2025</h4>
             <div class="pub-entry">
-                <p><strong>Using a Primary Battery to Power a Wireless Valve for Smart Irrigation Systems in Agriculture</strong><br>
-                Alfredo Arnaud, Augusto Sbarbaro, Diego Quiroga, ...<br>
+                <p><strong>"Using a Primary Battery to Power a Wireless Valve for Smart Irrigation Systems in Agriculture"</strong><br>
+                Alfredo Arnaud, Augusto Sbarbaro, Diego Quiroga, Nicolas Calarco, Joel Gak, Hever Gudiño, Andy Tepezila, Luis Arturo Soriano, Karla Citlali Gordillo, Jeniffer Carina Martinez, Victoria Gallegos, Matías Miguez<br>
                 <em>IEEE Transactions on AgriFood Electronics</em><br>
                 <a href="https://doi.org/10.1109/TAFE.2025.3589077" target="_blank">DOI</a> |
                 <a href="https://ieeexplore.ieee.org/abstract/document/11103753" target="_blank">IEEE Link</a>
                 </p>
             </div>
 
-        <!-- Repetir .pub-entry para cada publicación -->
+
+            <div class="pub-entry">
+                <p><strong>"A Semiactive LF/BLE Tag With 14× Extended Reading Range for Livestock RFID"</strong><br>
+                J Sapriza, N Martínez, M Miguez, A Arnaud<br>
+                <em>IEEE Transactions on AgriFood Electronics</em><br>
+                <a href="https://doi.org/10.1109/TAFE.2025.3589137 " target="_blank">DOI</a> |
+                <a href="https://ieeexplore.ieee.org/abstract/document/11096416" target="_blank">IEEE Link</a>
+                </p>
+            </div>
         </div>
 
         <div class="pub-year">
             <h4>2024</h4>
             <div class="pub-entry">
-                <p><strong>Using a Primary Battery to Power a Wireless Valve for Smart Irrigation Systems in Agriculture</strong><br>
-                Alfredo Arnaud, Augusto Sbarbaro, Diego Quiroga, ...<br>
+                <p><strong>"Analysis and Design of an SiC CMOS Three-Channel DC-DC Synchronous Buck Converter for High-Temperature Applications"</strong><br>
+                Andres Martinez, Felipe Torres, Jorge Marin, Christian A Rojas, Joel Gak, Mathias Rommel, Alexander May, Alan H Wilson-Veas, Matias Miguez, Chiara Rossi, Michael Schraml, Nicolas Calarco<br>
+                <em>Applied Sciences 14 (21), 9789</em><br>
+                <a href="https://doi.org/10.3390/app14219789" target="_blank">DOI</a> |
+                <a href="https://www.mdpi.com/2076-3417/14/21/9789" target="_blank">IEEE Link</a>
+                </p>
+            </div>
+
+            <div class="pub-entry">
+                <p><strong>"A Model for a Dense LoRaWAN Farm-Area Network in the Agribusiness"</strong><br>
+                Alfredo Arnaud, Matías Miguez, María Eugenia Araújo, Ariel Dagnino, Joel Gak, Aarón Jimenz, José Job Flores, Nicolas Calarco, Luis Arturo Soriano<br>
                 <em>IEEE Transactions on AgriFood Electronics</em><br>
-                <a href="https://doi.org/10.1109/TAFE.2025.3589077" target="_blank">DOI</a> |
-                <a href="https://ieeexplore.ieee.org/abstract/document/11103753" target="_blank">IEEE Link</a>
+                <a href="https://doi.org/10.1109/TAFE.2024.3422843" target="_blank">DOI</a> |
+                <a href="https://ieeexplore.ieee.org/abstract/document/10599886" target="_blank">IEEE Link</a>
+                </p>
+            </div>
+
+            <div class="pub-entry">
+                <p><strong>"Open-source multilevel converter power ic design and test"</strong><br>
+                Jorge Marin, Christian A Rojas, Alan H Wilson-Veas, Nelson Salvador, Joel Gak, Nicolas Calarco, Matias Miguez, Alejandro R Oliva<br>
+                <em>IEEE Design & Test</em><br>
+                <a href="https://doi.org/10.1109/MDAT.2024.3405892" target="_blank">DOI</a> |
+                <a href="https://ieeexplore.ieee.org/abstract/document/10539610" target="_blank">IEEE Link</a>
                 </p>
             </div>
         </div>
@@ -136,7 +163,7 @@
             </div>
         </div>
     </div>
-  </div>
+
 </section>
 
 
@@ -208,5 +235,7 @@
     <script src="js/datepicker.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/searchbar.js"></script>
+
 </body>
 </html>

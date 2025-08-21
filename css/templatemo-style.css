@@ -1564,3 +1564,14 @@ footer .contact-info ul li a {
   text-decoration: none;
   margin-right: 10px;
 }
+
+#searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  margin: 20px auto 30px;
+  display: block;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
