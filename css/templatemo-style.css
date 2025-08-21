@@ -1491,3 +1491,23 @@ footer .contact-info ul li a {
   color: #555;
   margin: 0;
 }
+
+.former-members-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.former-members-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.former-members-list li span {
+  font-weight: 500;
+  color: #222;
+}
