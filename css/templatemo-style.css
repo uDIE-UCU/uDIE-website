@@ -1451,3 +1451,43 @@ footer .contact-info ul li a {
     justify-content: center;
     gap: 30px; /* Espacio entre columnas, opcional */
 }
+
+.members-section {
+  padding: 40px 20px;
+}
+
+.section-heading h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.member-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px 30px;
+  width: 100%;
+}
+
+.member-list h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #6B8E7A;
+}
+
+.member-list p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
