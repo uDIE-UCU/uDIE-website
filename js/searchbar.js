@@ -4,29 +4,25 @@ document.addEventListener('DOMContentLoaded', function () {
   searchInput.addEventListener('input', function () {
     const query = this.value.trim().toLowerCase();
 
+    // Filtrar cada pub-entry según si contiene el texto buscado
+    document.querySelectorAll('.pub-entry').forEach(entry => {
+      const text = entry.textContent.toLowerCase();
+      const match = text.includes(query);
+      entry.style.display = match ? 'block' : 'none';
+    });
+
+    // Ocultar cada pub-year si no tiene ningún pub-entry visible
     document.querySelectorAll('.pub-year').forEach(yearBlock => {
-      const yearText = yearBlock.querySelector('h4')?.textContent.toLowerCase() || '';
-      let hasMatch = false;
+      const entries = yearBlock.querySelectorAll('.pub-entry');
+      const hasVisibleEntry = Array.from(entries).some(e => e.style.display !== 'none');
+      yearBlock.style.display = hasVisibleEntry ? 'block' : 'none';
+    });
 
-      // Si la búsqueda es un año exacto (4 dígitos), mostrar todo el bloque de ese año
-      if (/^\d{4}$/.test(query) && yearText.includes(query)) {
-        yearBlock.style.display = 'block';
-        yearBlock.querySelectorAll('.pub-entry').forEach(entry => {
-          entry.style.display = 'block';
-        });
-        hasMatch = true;
-      } else {
-        // Si es palabra clave, buscar dentro de cada publicación
-        yearBlock.querySelectorAll('.pub-entry').forEach(entry => {
-          const text = entry.textContent.toLowerCase();
-          const match = text.includes(query);
-          entry.style.display = match ? 'block' : 'none';
-          if (match) hasMatch = true;
-        });
-
-        // Mostrar u ocultar el bloque según si hubo coincidencias
-        yearBlock.style.display = hasMatch ? 'block' : 'none';
-      }
+    // Ocultar cada pub-category si no tiene ningún pub-year visible
+    document.querySelectorAll('.pub-category').forEach(categoryBlock => {
+      const yearBlocks = categoryBlock.querySelectorAll('.pub-year');
+      const hasVisibleYear = Array.from(yearBlocks).some(y => y.style.display !== 'none');
+      categoryBlock.style.display = hasVisibleYear ? 'block' : 'none';
     });
   });
 });
