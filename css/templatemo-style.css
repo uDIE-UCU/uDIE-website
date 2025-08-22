@@ -931,7 +931,7 @@ section.acta-documentos {
 }
 
 section.pricing-tables {
-    background: linear-gradient(180deg, #f8f8f8 0%, #A3C9A8 100%);
+    background: linear-gradient(180deg, #edf5f0 0%, #ffffff 100%);
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(127,202,15,0.05);
     padding-top: 40px;
@@ -1574,4 +1574,9 @@ footer .contact-info ul li a {
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
+}
+#searchInput:focus {
+  border: 1px solid #6B8E7A;
+  box-shadow: 0 0 6px rgba(0, 150, 255, 0.2);
+  outline: none;
 }
