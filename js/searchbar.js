@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       yearBlock.querySelectorAll('.pub-entry').forEach(entry => {
         const entryText = entry.textContent.toLowerCase();
-        // Busca en el texto de la entrada y en el año
+        
         const match = entryText.includes(query) || yearText.includes(query);
         entry.style.display = match ? '' : 'none';
         if (match) hasVisibleEntry = true;
