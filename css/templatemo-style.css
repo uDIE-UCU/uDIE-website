@@ -1585,3 +1585,10 @@ footer .contact-info ul li a {
   box-shadow: 0 0 6px rgba(0, 150, 255, 0.2);
   outline: none;
 }
+.left-content {
+  font-size: 18px;
+}
+.left-content ul {
+  list-style: none;
+  padding: 0;
+}
