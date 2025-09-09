@@ -938,24 +938,6 @@ section.pricing-tables {
     padding-bottom: 40px;
 }
 
-section.pricing-tables .table-item {
-  text-align: center;
-  background-color: #eeeeee;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 0px 0px 40px 0px;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-section.pricing-tables .table-item .top-content {
-  background-color: #6B8E7A;
-  padding: 30px;
-  color: #fff;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
 
 section.pricing-tables .table-item .top-content h4 {
   font-size: 19px;
@@ -1614,4 +1596,48 @@ footer .contact-info ul li a {
   padding: 40px 20px; /* espacio interno para que no quede apretado */
   border-radius: 8px; /* opcional: bordes redondeados para suavizar */
 }
+.custom-green-btn {
+    display: flex;                /* asegura mismo tamaño con flex */
+    align-items: center;          /* centra texto vertical */
+    justify-content: center;      /* centra texto horizontal */
+    width: 100%;                  /* ocupa toda la columna */
+    min-height: 120px;            /* fuerza altura uniforme */
+    text-align: center;
+    text-decoration: none;
+    background-color: #6B8E7A;    /* verde elegante */
+    color: white;
+    font-size: 2rem;              /* letra grande */
+    font-weight: 700;
+    padding: 0 40px;              /* espacio horizontal */
+    border-radius: 20px;
+    border: 2px solid #6B8E7A;    /* borde más fino */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
+.custom-green-btn:hover {
+    background-color: #ffffff;
+    color: #6B8E7A;
+    border-color: #6B8E7A;
+    transform: translateY(-4px) scale(1.02);
+}
+
+
+.custom-green-btn,
+.custom-green-btn:visited,
+.custom-green-btn:focus,
+.custom-green-btn:active {
+    color: white;
+    text-decoration: none;
+    outline: none;          
+    background-color: #6B8E7A;
+    border-color: #6B8E7A;
+}
+
+.custom-green-btn:hover {
+    background-color: #ffffff;
+    color: #6B8E7A;
+    border-color: #6B8E7A;
+    text-decoration: none;  
+    transform: translateY(-4px) scale(1.02);
+}
