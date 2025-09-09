@@ -1634,3 +1634,38 @@ footer .contact-info ul li a {
     color: #6B8E7A;
     transform: translateY(0) scale(0.98);
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 120px; /* 20px + 100px más arriba */
+  right: 120px;  /* 20px + 100px más a la izquierda */
+  display: none;
+  background-color: #C1DAB3; /* Verde sage */
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#scrollTopBtn:hover {
+  background-color: #B0CDA0;
+  transform: scale(1.05);
+}
+
+#scrollTopBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+#scrollTopBtn:focus {
+  outline: none;
+}
