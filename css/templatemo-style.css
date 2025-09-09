@@ -1637,17 +1637,16 @@ footer .contact-info ul li a {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 120px; /* 20px + 100px más arriba */
-  right: 120px;  /* 20px + 100px más a la izquierda */
+  bottom: 120px;
+  right: 120px;
   display: none;
-  background-color: #C1DAB3; /* Verde sage */
+  background-color: #C1DAB3;
   border: none;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   cursor: pointer;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease, transform 0.3s ease;
   display: flex;
   align-items: center;
