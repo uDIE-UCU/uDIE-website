@@ -1592,3 +1592,26 @@ footer .contact-info ul li a {
   list-style: none;
   padding: 0;
 }
+.cafe-link a.btn {
+  display: inline-block;
+  background-color: #6B8E7A;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 16px;
+  text-decoration: none;
+  border: 2px solid #6B8E7A;
+  transition: all 0.5s;
+}
+
+.cafe-link a.btn:hover {
+  background-color: transparent;
+  color: #6B8E7A;
+}
+.cafe-link {
+  background-color: #f4f4f4
+; 
+  padding: 40px 20px; /* espacio interno para que no quede apretado */
+  border-radius: 8px; /* opcional: bordes redondeados para suavizar */
+}
+
