@@ -781,15 +781,15 @@ section.our-services .service-item h4 {
 
 .our-services .left-content p,
 .our-services .left-content ul li {
-  font-size: 18px;   /* ajusta este valor según quieras */
-  line-height: 1.6;  /* mejora la legibilidad */
+  font-size: 18px;  
+  line-height: 1.6; 
 }
 
 .our-services .accordions > p {
-  font-size: 18px;      /* tamaño más grande */
-  line-height: 1.7;     /* para mejor legibilidad */
-  text-align: justify;   /* consistente con About Us */
-  margin-bottom: 15px;  /* separarlo un poco del acordeón */
+  font-size: 18px;     
+  line-height: 1.7;   
+  text-align: justify;
+  margin-bottom: 15px; 
 }
 
 
@@ -846,14 +846,13 @@ section.our-services .service-item h4 {
   padding: 15px 20px;
 }
 
-/* Texto desplegable dentro del acordeón */
 .accordion p {
   margin: 0;
   padding: 20px;
-  font-size: 16px;   /* agranda un poco el contenido */
-  line-height: 1.6;  /* mejora legibilidad */
+  font-size: 16px;  
+  line-height: 1.6; 
   border: 1px solid #ddd;
-  text-align: justify; /* igual que About Us */
+  text-align: justify;
 }
 
 a.active:after {
