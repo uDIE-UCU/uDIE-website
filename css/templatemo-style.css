@@ -778,6 +778,21 @@ section.our-services .service-item h4 {
   margin-top: 60px;
   padding-top: 60px;
 }
+
+.our-services .left-content p,
+.our-services .left-content ul li {
+  font-size: 18px;   /* ajusta este valor según quieras */
+  line-height: 1.6;  /* mejora la legibilidad */
+}
+
+.our-services .accordions > p {
+  font-size: 18px;      /* tamaño más grande */
+  line-height: 1.7;     /* para mejor legibilidad */
+  text-align: justify;   /* consistente con About Us */
+  margin-bottom: 15px;  /* separarlo un poco del acordeón */
+}
+
+
 .accordion li {
   position: relative;
 }
@@ -816,10 +831,29 @@ section.our-services .service-item h4 {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 .accordion p {
   margin: 0px;
   padding: 20px;
   border: 1px solid #ddd;
+}
+
+.accordion a {
+  font-weight: 600;
+  font-size: 18px;  
+  letter-spacing: 0.5px;
+  color: #232323;
+  padding: 15px 20px;
+}
+
+/* Texto desplegable dentro del acordeón */
+.accordion p {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;   /* agranda un poco el contenido */
+  line-height: 1.6;  /* mejora legibilidad */
+  border: 1px solid #ddd;
+  text-align: justify; /* igual que About Us */
 }
 
 a.active:after {
