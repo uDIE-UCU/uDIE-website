@@ -134,7 +134,7 @@ body {
   /* content: 'â˜°'; */
   content: '\2261';
   display: inline-block;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   font-size: 36px;
   font-style: normal;
   font-weight: normal;
@@ -209,11 +209,11 @@ body {
 
 #primary-nav li > a:hover,
 #primary-nav li.selected > a {
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 .sub-menu {
-  border-top: 3px solid #57c2a1;
+  border-top: 3px solid #0eafb1;
 }
 
 .sub-menu li a {
@@ -371,7 +371,7 @@ section.banner {
 .banner .banner-caption .line-dec {
   width: 80px;
   height: 3px;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
 }
 
 .banner .banner-caption h2 {
@@ -393,7 +393,7 @@ section.banner {
 }
 
 .banner .submit-form {
-  border-bottom: 5px solid #57c2a1;
+  border-bottom: 5px solid #0eafb1;
   background-color: #fff;
   padding: 15px;
 }
@@ -451,18 +451,18 @@ section.banner {
   text-align: center;
   display: inline-block;
   border-radius: 0px;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   font-size: 17px;
   letter-spacing: 0.5px;
   color: #fff;
   font-weight: 600;
-  border: 2px solid #57c2a1;
+  border: 2px solid #0eafb1;
   transition: all 0.5s;
 }
 
 .submit-form button:hover {
   background-color: transparent;
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 .popular-places .owl-nav {
@@ -484,7 +484,7 @@ section.banner {
 }
 
 .popular-places .owl-dots .active span {
-  background-color: #57c2a1!important;
+  background-color: #0eafb1!important;
 }
 
 .popular-places .owl-dots button {
@@ -595,7 +595,7 @@ section.featured-places {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   border-radius: 50%;
 }
 
@@ -634,7 +634,7 @@ section.featured-places {
 .featured-places .featured-item .down-content span {
   display: block;
   font-size: 13px;
-  color: #57c2a1;
+  color: #0eafb1;
   margin-bottom: 15px;
 }
 
@@ -671,7 +671,7 @@ section.featured-places {
 }
 
 .featured-places .featured-item .down-content .text-button a:hover {
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 .featured-places .featured-item {
@@ -707,7 +707,7 @@ section.microdie-members .people-item h4 {
 }
 
 .microdie-members .people-item a {
-    color: #57c2a1;
+    color: #0eafb1;
     font-weight: 600;
     text-decoration: none;
     padding: 0;
@@ -869,7 +869,7 @@ section.our-services .service-item h4 {
 }
 
 a.active:after {
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1018,7 +1018,7 @@ section.pricing-tables .table-item ul li a {
 }
 
 section.pricing-tables .table-item ul li a:hover {
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 section.contact .section-heading {
@@ -1033,19 +1033,19 @@ section.contact .section-heading {
 /* Modal button */
 .modal-btn {
   display: inline-block;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
-  border: 2px solid #57c2a1;
+  border: 2px solid #0eafb1;
   transition: all 0.5s;
 }
 
 .modal-btn:hover {
   background-color: transparent;
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 /* Modal base */
@@ -1082,7 +1082,7 @@ section.contact .section-heading {
   right: 20px;
   top: 20px;
   font-size: 24px;
-  color: #57c2a1;
+  color: #0eafb1;
   cursor: pointer;
 }
 
@@ -1095,7 +1095,7 @@ section.contact .section-heading {
 
 .section-heading span {
   font-size: 14px;
-  color: #57c2a1;
+  color: #0eafb1;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1123,7 +1123,7 @@ form textarea {
 
 form input:focus,
 form textarea:focus {
-  border-color: #57c2a1;
+  border-color: #0eafb1;
   outline: none;
 }
 
@@ -1134,7 +1134,7 @@ form textarea {
 
 /* Button */
 form button {
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -1153,7 +1153,7 @@ form button:hover {
 .right.content {
   flex: 1;
   padding: 40px;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   color: #fff;
 }
 
@@ -1254,7 +1254,7 @@ footer .about-veno p {
 }
 
 footer .about-veno ul li a:hover {
-  background-color: #57c2a1;
+  background-color: #0eafb1;
 }
 
 footer .useful-links ul li {
@@ -1270,11 +1270,11 @@ footer .useful-links ul li a {
 }
 
 footer .useful-links ul li a:hover {
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 footer .useful-links ul li i {
-  color: #57c2a1;
+  color: #0eafb1;
   font-size: 6px;
   position: relative;
   top: -3px;
@@ -1300,7 +1300,7 @@ footer .contact-info ul li span {
 
 footer .contact-info ul li a {
   font-size: 13px;
-  color: #57c2a1;
+  color: #0eafb1;
   letter-spacing: 0.5px;
   text-decoration: none;
 }
@@ -1318,7 +1318,7 @@ footer .contact-info ul li a {
 
 .sub-footer a {
   text-decoration: none;
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 
@@ -1435,14 +1435,14 @@ footer .contact-info ul li a {
 /* Personalización para la sección de acta-documentos */
 .acta-documentos .form-control {
     border-radius: 20px;
-    border: 1px solid #57c2a1;
+    border: 1px solid #0eafb1;
 }
 .acta-documentos table th {
-    background: #57c2a1;
+    background: #0eafb1;
     color: #fff;
 }
 .acta-documentos table td a {
-    color: #57c2a1;
+    color: #0eafb1;
     font-weight: bold;
 }
 /* Centrado horizontal para la fila de categorías */
@@ -1483,7 +1483,7 @@ footer .contact-info ul li a {
 .member-list h4 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #57c2a1;
+  color: #0eafb1;
 }
 
 .member-list p {
@@ -1544,13 +1544,13 @@ footer .contact-info ul li a {
 
 .pub-year h4 {
   font-size: 18px;
-  color: #57c2a1;
+  color: #0eafb1;
   margin-bottom: 10px;
 }
 
 .pub-theses h4 {
   font-size: 18px;
-  color: #57c2a1;
+  color: #0eafb1;
   margin-bottom: 10px;
 }
 .pub-entry {
@@ -1582,7 +1582,7 @@ footer .contact-info ul li a {
   border-radius: 6px;
 }
 #searchInput:focus {
-  border: 1px solid #57c2a1;
+  border: 1px solid #0eafb1;
   box-shadow: 0 0 6px rgba(0, 150, 255, 0.2);
   outline: none;
 }
@@ -1595,19 +1595,19 @@ footer .contact-info ul li a {
 }
 .cafe-link a.btn {
   display: inline-block;
-  background-color: #57c2a1;
+  background-color: #0eafb1;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
-  border: 2px solid #57c2a1;
+  border: 2px solid #0eafb1;
   transition: all 0.5s;
 }
 
 .cafe-link a.btn:hover {
   background-color: transparent;
-  color: #57c2a1;
+  color: #0eafb1;
 }
 .cafe-link {
   background-color: #f4f4f4
@@ -1622,11 +1622,11 @@ footer .contact-info ul li a {
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #57c2a1;   
+    background-color: #0eafb1;   
     color: white;
     font-size: 2rem;          
     font-weight: 700;
-    border: 2px solid #57c2a1;   
+    border: 2px solid #0eafb1;   
     border-radius: 15px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1634,14 +1634,14 @@ footer .contact-info ul li a {
 
 .green-button a:hover {
     background-color: #ffffff;
-    color: #57c2a1;
-    border-color: #57c2a1;
+    color: #0eafb1;
+    border-color: #0eafb1;
     text-decoration: none;
     transform: translateY(-4px) scale(1.02);
 }
 
 .green-button a:visited {
-    background-color: #57c2a1;
+    background-color: #0eafb1;
     color: white;
     text-decoration: none;
     outline: none;
@@ -1650,7 +1650,7 @@ footer .contact-info ul li a {
 .green-button a:focus,
 .green-button a:active{
     background-color: #ffffff;
-    color: #57c2a1;
+    color: #0eafb1;
     transform: translateY(0) scale(0.98);
 }
 
@@ -1659,7 +1659,7 @@ footer .contact-info ul li a {
   bottom: 120px;
   right: 120px;
   display: none;
-  background-color: #92eace;
+  background-color: #25345d;
   border: none;
   width: 48px;
   height: 48px;
@@ -1675,7 +1675,7 @@ footer .contact-info ul li a {
 }
 
 #scrollTopBtn:hover {
-  background-color: #92eace(0, 0%, 99%, 0.647);
+  background-color: #25345d(0, 0%, 99%, 0.647);
   transform: scale(1.05);
   opacity: 0.9;
 }
