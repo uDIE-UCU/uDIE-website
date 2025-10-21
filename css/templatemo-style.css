@@ -89,8 +89,18 @@ section {
 
 #header {
   overflow: visible;
-  position: relative;
-  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fdfbf5;
+  z-index: 9999;
+}
+.content {
+  margin-top: 100px; /* igual a la altura del header */
+}
+body {
+  padding-top: 100px !important;
 }
 
 
@@ -139,10 +149,13 @@ section {
 
 #header .logo {
   float: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
 
 #header .logo img {
-  width: 100%;
+  width: 1000%;
   overflow: hidden;
 }
 
@@ -338,7 +351,7 @@ section {
 /* Banner Style */
 
 section.banner {
-  padding: 0px;
+  padding: 100px;
 }
 
 .banner {
