@@ -7,7 +7,7 @@ http://www.templatemo.com/tm-522-venue
 */
 
 body {
-  font-family: 'Raleway', 'sans-serif';
+  font-family: 'Helvetica', 'sans-serif';
   background-color: #fff;
 }
 
@@ -205,6 +205,23 @@ body {
   font-size: 15px;
   font-weight: 400;
   transition: all 0.5s;
+  position: relative;
+}
+
+#primary-nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 25px; /* ajustá según la altura del menú */
+  width: 0%;
+  height: 3px;
+  background-color: #0eafb1; /* mismo color que usás en hover */
+  transition: width 0.3s ease;
+}
+
+#primary-nav > ul > li > a:hover::after,
+#primary-nav > ul > li.selected > a::after {
+  width: 100%;
 }
 
 #primary-nav li > a:hover,
@@ -344,6 +361,39 @@ body {
 #primary-nav-button.mobile {
   display: inline-block;
 }
+
+/* Sobrescribir el li del botón para que no herede line-height gigante */
+.menu li a.menu-cta {
+    background-color: #0eafb1;
+    color: #fff !important;
+    padding: 8px 16px;      /* tamaño del botón */
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: normal !important; /* fuerza line-height normal */
+    display: inline-block !important;  
+    height: 30px !important;         /* altura automática según padding */
+    vertical-align: middle !important; /* alinear verticalmente */
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.menu li a.menu-cta:hover {
+    background-color: #0c9396;
+    color: #0eafb1 !important;
+}
+
+/* Evitar ::after de menú normal */
+.menu li a.menu-cta::after {
+    display: none !important;
+}
+
+/* Opcional: asegurarse que el li padre no fuerce altura */
+.menu li a.menu-cta {
+    min-height: 0 !important;
+}
+
+
 
 
 
@@ -973,7 +1023,7 @@ section.acta-documentos {
     letter-spacing: 0.5px;
     margin-bottom: 20px;
     margin-top: 0;
-    font-family: 'Raleway', 'sans-serif';
+    font-family: 'Helvetica', 'sans-serif';
 }
 
 section.pricing-tables {
