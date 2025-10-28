@@ -365,19 +365,14 @@ body {
 .menu li a.menu-cta {
   color: #0eafb1 !important;
   background-color: transparent;
-  padding: 14px 28px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 600;
-  line-height: normal !important;
-  display: inline-block !important;
   position: relative;
   transition: all 0.3s ease;
-  text-decoration: none;
+  text-decoration: none !important;
   white-space: nowrap;
 }
-
-
 
 
 .menu li a.menu-cta:hover {
