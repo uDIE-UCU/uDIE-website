@@ -362,40 +362,31 @@ body {
   display: inline-block;
 }
 
-/* Sobrescribir el li del botón para que no herede line-height gigante */
 .menu li a.menu-cta {
-    background-color: #0eafb1;
-    color: #fff !important;
-    padding: 8px 16px;      /* tamaño del botón */
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: normal !important; /* fuerza line-height normal */
-    display: inline-block !important;  
-    height: 30px !important;         /* altura automática según padding */
-    vertical-align: middle !important; /* alinear verticalmente */
-    transition: all 0.3s ease;
+  color: #0eafb1 !important;
+  background-color: transparent;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal !important;
+  display: inline-block !important;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-/* Hover */
+
+
+
 .menu li a.menu-cta:hover {
-    background-color: #0c9396;
-    color: #0eafb1 !important;
+  color: #f57c00 !important;
 }
 
-/* Evitar ::after de menú normal */
-.menu li a.menu-cta::after {
-    display: none !important;
+.menu li a.menu-cta:hover::after {
+  background-color: #f57c00;
 }
-
-/* Opcional: asegurarse que el li padre no fuerce altura */
-.menu li a.menu-cta {
-    min-height: 0 !important;
-}
-
-
-
-
 
 
 /* Banner Style */
