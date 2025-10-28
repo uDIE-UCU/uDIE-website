@@ -231,10 +231,10 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 25px; /* ajustá según la altura del menú */
+  bottom: 25px;
   width: 0%;
   height: 3px;
-  background-color: #0eafb1; /* mismo color que usás en hover */
+  background-color: #0eafb1;
   transition: width 0.3s ease;
 }
 
