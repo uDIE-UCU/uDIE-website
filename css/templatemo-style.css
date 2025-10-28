@@ -225,7 +225,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-}
+
 
 #primary-nav > ul > li > a::after {
   content: "";
@@ -924,12 +924,11 @@ section.our-services .service-item h4 {
 }
 
 a.active:after {
-  background-color: #0eafb1;
+  background-color: #ea5b0c;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 
 
 section#video-container {
