@@ -214,14 +214,17 @@ body {
 }
 
 #primary-nav li a {
-  color: #121212;
+  color: #173363;
   font-weight: bold;
   line-height: 100px;
   padding: 0px 15px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   transition: all 0.5s;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
 }
 
 #primary-nav > ul > li > a::after {
@@ -251,7 +254,7 @@ body {
 
 .sub-menu li a {
   line-height: 50px!important;
-  font-size: 13px!important;
+  font-size: 14px!important;
   color: #7a7a7a;
 }
 
@@ -1360,12 +1363,12 @@ footer .contact-info ul li a {
 .sub-footer p {
   text-align: center;
   display: inline-block;
-  background-color: #f4f4f4;
+  background-color: #e5e5e5;
   width: 100%;
   margin-bottom: 0px;
   padding: 30px 0px;
   font-size: 15px;
-  color: #aaaaaa;
+  color: #173363;
 }
 
 .sub-footer a {
