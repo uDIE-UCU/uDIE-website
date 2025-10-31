@@ -1007,13 +1007,7 @@ section#video-container {
   border-radius: 50%;
 }
 
-section.pricing-tables {
-    margin-bottom: 60px; /* Espaciado extra debajo de Categories */
-}
 
-section.acta-documentos {
-    margin-top: 60px !important; /* Espaciado extra arriba de Our projects */
-}
 
 .acta-documentos select {
     cursor: pointer;
@@ -1035,7 +1029,7 @@ section.pricing-tables {
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(127,202,15,0.05);
     padding-top: 40px;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
 }
 
 section.pricing-tables .table-item {
@@ -1485,6 +1479,14 @@ footer .contact-info ul li a {
 
 }
 }
+/*
+section.pricing-tables {
+    margin-bottom: 60px; /* Espaciado extra debajo de Categories 
+}
+
+section.acta-documentos {
+    margin-top: 10px !important; /* Espaciado extra arriba de Our projects 
+}*/
 
 /* Personalización para la sección de acta-documentos */
 .acta-documentos .form-control {
@@ -1516,6 +1518,7 @@ footer .contact-info ul li a {
   font-size: 28px;
   color: #333;
 }
+
 
 .member-list {
   list-style: none;
