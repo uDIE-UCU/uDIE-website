@@ -398,15 +398,15 @@ body {
   background-color: #f57c00;
 }
 
-/* 🔧 Correcciones para móvil */
+/*Correcciones para celu*/
 #primary-nav.mobile > ul > li > a::after {
-  content: none !important; /* elimina la línea decorativa */
+  content: none !important; 
 }
 
 #primary-nav.mobile li a {
   line-height: 50px;
   padding: 10px 15px;
-  border: none; /* evita duplicar líneas */
+  border: none; 
 }
 
 /* Banner Style */
@@ -2001,5 +2001,18 @@ footer .contact-info ul li a {
 
   .cafe-link {
     padding: 30px 15px;
+  }
+}
+/* Ajustes para about us en celu */
+@media (max-width: 768px) {
+  #services .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #services .left-content,
+  #services .accordions {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
