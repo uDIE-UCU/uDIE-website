@@ -97,7 +97,7 @@ section {
   z-index: 9999;
 }
 .content {
-  margin-top: 100px; /* igual a la altura del header */
+  margin-top: 100px;
 }
 body {
   padding-top: 100px !important;
@@ -131,7 +131,6 @@ body {
 }
 
 #primary-nav-button:before {
-  /* content: 'â˜°'; */
   content: '\2261';
   display: inline-block;
   background-color: #0eafb1;
@@ -225,8 +224,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 #primary-nav > ul > li > a::after {
   content: "";
   position: absolute;
@@ -259,11 +256,11 @@ body {
 }
 
 .downarrow {
-    background: none;
-    display: inline-block;
+  background: none;
+  display: inline-block;
   padding: 0;
-    text-align: center;
-    min-width: 3px;
+  text-align: center;
+  min-width: 3px;
 }
 
 .sub-menu .downarrow {
@@ -354,7 +351,6 @@ body {
   border: none;
 }
 
-
 #primary-nav.mobile .sub-menu {
   float: left;
   position: relative;
@@ -377,6 +373,7 @@ body {
 #primary-nav.mobile .sub-menu .downarrow:before {
   content: '\25be';
 }
+
 #primary-nav-button.mobile {
   display: inline-block;
 }
@@ -393,7 +390,6 @@ body {
   white-space: nowrap;
 }
 
-
 .menu li a.menu-cta:hover {
   color: #f57c00 !important;
 }
@@ -402,6 +398,16 @@ body {
   background-color: #f57c00;
 }
 
+/* 🔧 Correcciones para móvil */
+#primary-nav.mobile > ul > li > a::after {
+  content: none !important; /* elimina la línea decorativa */
+}
+
+#primary-nav.mobile li a {
+  line-height: 50px;
+  padding: 10px 15px;
+  border: none; /* evita duplicar líneas */
+}
 
 /* Banner Style */
 
@@ -492,7 +498,7 @@ section.banner {
 
 .submit-form input:focus{
   border-width: 0px;
-  outline:0; /* I have also tried outline:none */
+  outline:0;
   -webkit-appearance:none;
   box-shadow: none;
   -moz-box-shadow: none;
@@ -1029,7 +1035,6 @@ section.pricing-tables {
     border-radius: 16px;
     box-shadow: 0 2px 16px rgba(127,202,15,0.05);
     padding-top: 40px;
-    /*padding-bottom: 40px;*/
 }
 
 section.pricing-tables .table-item {
@@ -1479,14 +1484,6 @@ footer .contact-info ul li a {
 
 }
 }
-/*
-section.pricing-tables {
-    margin-bottom: 60px; /* Espaciado extra debajo de Categories 
-}
-
-section.acta-documentos {
-    margin-top: 10px !important; /* Espaciado extra arriba de Our projects 
-}*/
 
 /* Personalización para la sección de acta-documentos */
 .acta-documentos .form-control {
@@ -1505,7 +1502,7 @@ section.acta-documentos {
 .custom-center-row {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espacio entre columnas, opcional */
+    gap: 30px;
 }
 
 .members-section {
@@ -1667,8 +1664,7 @@ section.acta-documentos {
   color: #0eafb1;
 }
 .cafe-link {
-  background-color: #f4f4f4
-; 
+  background-color: #f4f4f4; 
   padding: 40px 20px; 
   border-radius: 8px; 
 }
@@ -1746,4 +1742,264 @@ section.acta-documentos {
 
 #scrollTopBtn:focus {
   outline: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px !important;
+  }
+
+  #header {
+    height: 70px;
+  }
+
+  #header .logo {
+    height: 70px;
+    padding-left: 15px;
+  }
+
+  #header .logo img {
+    max-height: 50px;
+    width: auto;
+  }
+
+  #primary-nav-button:before {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 28px;
+  }
+
+  #primary-nav.mobile {
+    top: 70px;
+  }
+
+  #primary-nav li a {
+    line-height: 50px;
+    font-size: 15px;
+    padding: 0px 10px;
+  }
+
+  .content {
+    margin-top: 70px;
+  }
+
+  section {
+    padding-top: 40px;
+  }
+
+  section.banner {
+    padding: 40px 15px;
+  }
+
+  .banner .banner-caption {
+    padding: 100px 15px;
+  }
+
+  .banner .banner-caption h2 {
+    font-size: 28px;
+  }
+
+  .banner .banner-caption span {
+    font-size: 16px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 20px;
+  }
+
+  .section-heading span {
+    font-size: 14px;
+  }
+
+  .submit-form .first-item,
+  .submit-form .second-item,
+  .submit-form .third-item {
+    border-right: none;
+    margin-bottom: 15px;
+  }
+
+  .featured-places {
+    padding-bottom: 40px;
+  }
+
+  .microdie-members .row {
+    flex-direction: column;
+  }
+
+  .microdie-members .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  section.our-services .service-item {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+
+  .down-services {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .down-services .left-content {
+    margin-bottom: 40px;
+  }
+
+  .our-services .left-content p,
+  .our-services .left-content ul li {
+    font-size: 16px;
+  }
+
+  .our-services .accordions > p {
+    font-size: 16px;
+  }
+
+  .accordion a {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .accordion p {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  #video-container {
+    height: 300px;
+  }
+
+  #video-container .video-content .inner span {
+    font-size: 14px;
+  }
+
+  #video-container .video-content .inner h2 {
+    font-size: 18px;
+  }
+
+  section.pricing-tables {
+    padding-top: 30px;
+  }
+
+  section.pricing-tables .table-item ul {
+    margin: 20px 0px !important;
+  }
+
+  section.pricing-tables .table-item ul li {
+    margin: 15px 0px;
+  }
+
+  .modal-content {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .left.content,
+  .right.content {
+    padding: 30px 20px;
+  }
+
+  .modal-content .close {
+    position: static;
+    transform: none;
+    text-align: right;
+    padding: 10px 20px 0;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 40px 0px 35px 0px;
+  }
+
+  footer .footer-heading h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  footer .useful-links,
+  footer .contact-info {
+    margin-top: 40px;
+  }
+
+  .sub-footer p {
+    font-size: 13px;
+    padding: 20px 15px;
+  }
+
+  .custom-center-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .members-section {
+    padding: 30px 15px;
+  }
+
+  .member-list li {
+    padding: 20px 15px;
+  }
+
+  .member-list h4 {
+    font-size: 18px;
+  }
+
+  .publications-section {
+    padding: 30px 15px;
+  }
+
+  .pub-category h3 {
+    font-size: 20px;
+  }
+
+  .pub-year h4,
+  .pub-theses h4 {
+    font-size: 16px;
+  }
+
+  .pub-entry {
+    padding-left: 8px;
+  }
+
+  .pub-entry p {
+    font-size: 14px;
+  }
+
+  #searchInput {
+    max-width: 100%;
+    margin: 15px auto 20px;
+  }
+
+  .left-content {
+    font-size: 16px;
+  }
+
+  .green-button a {
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #scrollTopBtn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .acta-documentos table {
+    font-size: 12px;
+  }
+
+  .cafe-link {
+    padding: 30px 15px;
+  }
 }
