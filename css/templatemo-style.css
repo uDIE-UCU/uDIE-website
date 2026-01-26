@@ -2016,3 +2016,59 @@ footer .contact-info ul li a {
     margin-right: 5px;
   }
 }
+@media (max-width: 768px) {
+  .acta-documentos .table-responsive {
+    overflow-x: hidden; /* 🔧 evita scroll horizontal */
+  }
+
+  .acta-documentos table {
+    width: 100% !important;
+    table-layout: auto !important;
+    border: 0;
+  }
+
+  .acta-documentos tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .acta-documentos td {
+    display: block;
+    width: 100% !important;
+    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+    white-space: normal !important;   /* 🔧 permite saltos de línea */
+    word-break: break-word !important; /* 🔧 rompe palabras largas */
+    overflow-wrap: anywhere;           /* 🔧 fuerza ajuste al ancho */
+  }
+
+  .acta-documentos td:nth-child(1)::before {
+    content: "Name:";
+    font-weight: bold;
+    color: #0eafb1;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .acta-documentos td:nth-child(2)::before {
+    content: "Date:";
+    font-weight: bold;
+    color: #0eafb1;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .acta-documentos td:nth-child(3)::before {
+    content: "Abstract:";
+    font-weight: bold;
+    color: #0eafb1;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
