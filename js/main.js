@@ -149,17 +149,18 @@ jQuery(document).ready(function($) {
             // Menu button click event
             // Displays top-level menu items
             $('#'+buttonid).click(function(e) {
-              e.preventDefault();
-              
-              if ( isSelected($('#'+buttonid)) ) {
-                // Close menu
-                collapseChildren('#'+menuid);
-                animateHide($('#'+menuid), $('#'+buttonid));
-              } else {
-                // Open menu
-                animateShow($('#'+menuid), $('#'+buttonid));
-              }
-            });
+  e.preventDefault(); // mantenemos para evitar saltos de página
+  
+  var $menu = $('#'+menuid);
+  var $button = $('#'+buttonid);
+
+  if ($menu.is(':visible')) {
+    animateHide($menu, $button);
+  } else {
+    animateShow($menu, $button);
+  }
+});
+
           }
         }
         
@@ -217,18 +218,23 @@ jQuery(document).ready(function($) {
               });
             } else {
               // Compact menu
-              $link.click(function(e) {
-                e.preventDefault();
+              // Compact menu
+$link.click(function(e) {
+  var $targetul = $curobj.children('ul:eq(0)');
+  
+  if ($targetul.length > 0) {
+    // Solo prevenir si hay submenú
+    e.preventDefault();
+    if ( isSelected($curobj) ) {
+      collapseChildren($targetul);
+      animateHide($targetul);
+    } else {
+      animateShow($targetul);
+    }
+  }
+  // Si NO hay submenú, el enlace funciona normal
+});
 
-                var $targetul = $curobj.children('ul:eq(0)');
-                if ( isSelected($curobj) ) {
-                  collapseChildren($targetul);
-                  animateHide($targetul);
-                } else {
-                  //collapseSiblings($curobj);
-                  animateShow($targetul);
-                }
-              });
             }
           });
           
@@ -333,4 +339,23 @@ jQuery(document).ready(function($) {
           
         })
         
+});$('a.scrollTo').on('click', function(){
+  var scrollTo = $(this).attr('data-scrollTo');
+
+  $("a.scrollTo").each(function() {
+    if(scrollTo == $(this).attr('data-scrollTo')){
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active');
+    }
+  });
+
+  $('body, html').animate({
+    "scrollTop": $('#'+scrollTo).offset().top
+  }, 1000 );
+
+  // 🔧 cerrar menú móvil después del clic
+  $('#primary-nav').removeClass('selected').hide();
+
+  return false;
 });
