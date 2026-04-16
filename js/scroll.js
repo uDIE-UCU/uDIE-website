@@ -1,29 +1,42 @@
 document.addEventListener('DOMContentLoaded', function () {
   const hash = window.location.hash;
+
   if (hash) {
-    // Evita el scroll automático del navegador
+    // Evita salto instantáneo
     window.scrollTo(0, 0);
 
     const target = document.querySelector(hash);
+
     if (target) {
       setTimeout(function () {
-        // Scroll lento personalizado
-        const targetY = target.getBoundingClientRect().top + window.pageYOffset;
+
+        const header = document.getElementById('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+
+        const targetY =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerHeight - 10;
+
         const startY = window.pageYOffset;
-        const duration = 1200; // ms
-        let start;
+        const duration = 800;
+        let start = null;
 
         function step(timestamp) {
           if (!start) start = timestamp;
-          const time = timestamp - start;
-          const percent = Math.min(time / duration, 1);
+          const progress = timestamp - start;
+          const percent = Math.min(progress / duration, 1);
+
           window.scrollTo(0, startY + (targetY - startY) * percent);
-          if (time < duration) {
+
+          if (progress < duration) {
             window.requestAnimationFrame(step);
           }
         }
+
         window.requestAnimationFrame(step);
-      }, 300);
+
+      }, 200);
     }
   }
 });
