@@ -843,106 +843,129 @@ section.microdie-members .people-item h4 {
 }
 
 /* =====================
-   SERVICES
+   ABOUT MODERN STYLE
    ===================== */
-section.our-services .service-item {
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 50px 30px;
+
+.about-card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-section.our-services .service-item .icon img {
-  max-width: 100%;
+/* TITLES */
+.about-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #173363;
+  margin-bottom: 20px;
 }
 
-section.our-services .service-item h4 {
-  font-size: 19px;
+.about-subtitle {
   font-weight: 600;
-  color: #232323;
-  margin: 30px 0 15px;
+  color: #0eafb1;
+  margin-top: 20px;
 }
 
-.our-services .left-content h4 {
-  font-size: 19px;
-  font-weight: 600;
-  color: #232323;
-  margin: 0 0 25px;
+/* TEXT */
+.about-intro,
+.about-footer {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
 }
 
-.our-services .left-content .blue-button {
-  margin-top: 25px;
+/* LIST */
+.about-list {
+  margin: 20px 0;
+  padding: 0;
 }
 
-.down-services {
-  border-top: 1px solid #ddd;
-  margin-top: 60px;
-  padding-top: 60px;
-}
-
-.our-services .left-content p,
-.our-services .left-content ul li {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.our-services .accordions > p {
-  font-size: 18px;
-  line-height: 1.7;
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
-/* =====================
-   ACCORDION
-   ===================== */
-.accordion li {
+.about-list li {
+  list-style: none;
   position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  color: #444;
 }
 
-.accordion li a {
-  border: 1px solid #ddd;
-  width: 100%;
-  display: block;
-  cursor: pointer;
+.about-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0eafb1;
   font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  color: #232323;
-  user-select: none;
+}
+
+/* ACCORDION */
+.accordion li a {
+  display: block;
   padding: 15px 20px;
-  text-decoration: none;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.accordion li a:hover {
+  background: #0eafb1;
+  color: white;
 }
 
 .accordion li p {
-  display: none;
-  margin: 0;
-  padding: 20px;
-  font-size: 16px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 14px;
   line-height: 1.6;
-  border: 1px solid #ddd;
-  text-align: justify;
+  display: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.accordion a:after {
-  content: " ";
-  width: 15px;
-  height: 15px;
-  background-color: #ddd;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: 22.5px;
-  transform: rotate(-45deg);
-  transition: all 0.2s ease-in-out;
+/* =====================
+   ARROW + FIX LINKS
+   ===================== */
+
+/* sacar estilo de link */
+.accordion li a {
+  text-decoration: none;
+  color: #2f6fab; /* el azul que ya estás usando */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a.active:after {
-  background-color: #ea5b0c;
-  transition: all 0.2s ease-in-out;
+/* hover mantiene tu estilo */
+.accordion li a:hover {
+  color: white;
 }
 
+/* flechita */
+.arrow {
+  width: 10px;
+  height: 10px;
 
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+
+  transform: rotate(45deg);
+  transition: transform 0.25s ease;
+
+  margin-left: 10px;
+}
+
+/* animación cuando abre */
+.accordion a.active .arrow {
+  transform: rotate(-135deg);
+}
 
 /* =====================
    PRICING / PROJECTS
@@ -985,15 +1008,92 @@ section.pricing-tables .table-item ul li a:hover {
 }
 
 /* =====================
-   CONTACT
+   CONTACT REDESIGN
    ===================== */
-section.contact .section-heading {
-  margin-top: 60px;
-  margin-bottom: 30px;
+
+.contact {
+  padding: 80px 0;
 }
 
-.wrapper {
-  text-align: center;
+/* MAPA */
+.map-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* CARD DERECHA */
+.contact-card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 16px;
+  padding: 40px;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* TEXTOS */
+.contact-label {
+  color: #0eafb1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.contact-title {
+  font-size: 28px;
+  margin: 10px 0 20px;
+  color: #173363;
+}
+
+.contact-text {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+/* EMAIL */
+.contact-email {
+  display: inline-block;
+  padding: 12px 20px;
+
+  background: #0eafb1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-email:hover {
+  background: #0c8f91;
+}
+/* igualar alturas */
+.contact .row {
+  display: flex;
+  align-items: stretch;
+}
+
+/* columnas */
+.contact .col-md-6 {
+  display: flex;
+}
+
+/* ambos bloques ocupan todo */
+.map-card,
+.contact-card {
+  width: 100%;
+  height: 100%;
+}
+
+/* mapa ocupa todo */
+.map-card iframe {
+  height: 100%;
+  min-height: 320px;
 }
 
 /* =====================
@@ -1079,6 +1179,93 @@ section.contact .section-heading {
   color: #e0f7f1;
 }
 
+/* =====================
+   RESPONSIVE CONTACT + ABOUT
+   ===================== */
+
+@media (max-width: 768px) {
+
+  /* CONTACT */
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .map-card iframe {
+    height: 250px;
+  }
+
+  .contact-card {
+    padding: 25px;
+    margin-top: 20px;
+  }
+
+  .contact-title {
+    font-size: 22px;
+  }
+
+  /* ABOUT */
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-list li {
+    font-size: 14px;
+  }
+
+  .accordion li a {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+
+  .accordion li p {
+    font-size: 13px;
+  }
+}
+/* =====================
+   HIGHLIGHT SECTION
+   ===================== */
+
+.highlight-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #173363, #1f3f7a);
+  position: relative;
+  overflow: hidden;
+}
+
+/* contenedor del texto */
+.highlight-box {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* texto */
+.highlight-box p {
+  font-size: 22px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+}
+
+/* opcional: efecto sutil de luz */
+.highlight-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+}
+.highlight-box strong {
+  color: #0eafb1;
+  font-weight: 600;
+}
 /* =====================
    FORMS
    ===================== */

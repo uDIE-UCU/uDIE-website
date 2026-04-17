@@ -31,31 +31,26 @@ jQuery(document).ready(function ($) {
   /* =====================
      ACCORDION
      ===================== */
-  $(".accordion > li:eq(0) a")
-    .addClass("active")
-    .next()
-    .slideDown();
 
-  $(".accordion a").click(function (e) {
-    var dropDown = $(this).closest("li").find("p");
+$(".accordion a").click(function (e) {
+  e.preventDefault();
 
-    $(this).closest(".accordion")
-      .find("p")
-      .not(dropDown)
-      .slideUp();
+  var $this = $(this);
+  var $content = $this.next("p");
 
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-    } else {
-      $(this).closest(".accordion")
-        .find("a.active")
-        .removeClass("active");
-      $(this).addClass("active");
-    }
+  // cerrar otros
+  $(".accordion p").not($content).slideUp();
+  $(".accordion a").not($this).removeClass("active");
 
-    dropDown.stop(false, true).slideToggle();
-    e.preventDefault();
-  });
+  // toggle actual
+  if ($this.hasClass("active")) {
+    $this.removeClass("active");
+    $content.slideUp();
+  } else {
+    $this.addClass("active");
+    $content.stop(true, true).slideDown(250);
+  }
+});
 
   /* =====================
      OWL CAROUSEL
@@ -164,26 +159,26 @@ jQuery(document).ready(function ($) {
   /* =====================
      SCROLL SMOOTH
      ===================== */
-$('a.scrollTo').on('click', function(e){
+  $('a.scrollTo').on('click', function (e) {
 
-  var href = $(this).attr('href');
+    var href = $(this).attr('href');
 
-  // Si es un link a OTRA página → NO interferir
-  if (href.includes('.html')) {
-    return; // deja que navegue normal
-  }
+    // Si es un link a OTRA página → NO interferir
+    if (href.includes('.html')) {
+      return; // deja que navegue normal
+    }
 
-  e.preventDefault();
+    e.preventDefault();
 
-  var scrollTo = $(this).attr('data-scrollTo') || href.replace('#','');
-  var target = $('#' + scrollTo);
+    var scrollTo = $(this).attr('data-scrollTo') || href.replace('#', '');
+    var target = $('#' + scrollTo);
 
-  if (target.length) {
-    $('html, body').animate({
-      scrollTop: target.offset().top - 90
-    }, 800);
-  }
-});
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top - 90
+      }, 800);
+    }
+  });
 
   /* =====================
      HEADER SCROLL EFFECT
@@ -195,8 +190,8 @@ $('a.scrollTo').on('click', function(e){
       $('#header').removeClass('scrolled');
     }
   });
-$('a').on('click', function() {
-  $('li').removeClass('active');
-  $(this).parent().addClass('active');
-});
+  $('a').on('click', function () {
+    $('li').removeClass('active');
+    $(this).parent().addClass('active');
+  });
 });
