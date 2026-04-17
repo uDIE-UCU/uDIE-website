@@ -1265,6 +1265,7 @@ section.pricing-tables .table-item ul li a:hover {
 .highlight-box strong {
   color: #0eafb1;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 /* =====================
    FORMS
