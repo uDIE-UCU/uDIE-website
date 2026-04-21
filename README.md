@@ -29,7 +29,7 @@ _Por cualquier consulta con respecto al dominio consultar con Infraestructura UC
 - Node.js (opcional, para desarrollo local)
 - Navegador web
 
-## 📦 Instalación y Uso
+## Instalación y Uso
 
 ### Clonar el repositorio
 
@@ -39,7 +39,7 @@ cd uDIE-website
 ```
 ### Visualizar la página
 
-Abrir el archivo 'index.html' en tu navegador.
+Abrir el archivo ```index.html``` en tu navegador.
 
 ## Sitio en línea
 
