@@ -2020,16 +2020,22 @@ footer .contact-info ul li a {
 /* =====================
    WORKSHOP PAGE
    ===================== */
+#header .container {
+  position: relative;
+}
+
 #header .hub-badge {
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 15px;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 60px;
 }
 
 #header .hub-badge img {
   width: auto;
-  max-height: 200px;
+  max-height: 60px;
   object-fit: contain;
 }
 
