@@ -175,7 +175,7 @@ $(".accordion a").click(function (e) {
 
     if (target.length) {
       $('html, body').animate({
-        scrollTop: target.offset().top - 90
+        scrollTop: target.offset().top - 100
       }, 800);
     }
   });
