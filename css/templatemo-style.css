@@ -138,10 +138,6 @@ section {
   clear: both;
 }
 
-.cf {
-  *zoom: 1;
-}
-
 #header {
   overflow: visible;
   position: fixed;
@@ -327,6 +323,7 @@ section {
   line-height: 50px !important;
   font-size: 14px !important;
   color: #7a7a7a;
+  white-space: nowrap;
 }
 
 .downarrow {
@@ -372,13 +369,15 @@ section {
 }
 
 .menu li:hover > .sub-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 #primary-nav .sub-menu {
   background: #fff;
   box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-  min-width: 200px;
+  min-width: 260px;
+  width: max-content;
   z-index: 200;
 }
 
@@ -2015,5 +2014,457 @@ footer .contact-info ul li a {
 
   .acta-documentos table {
     font-size: 12px;
+  }
+}
+
+/* =====================
+   WORKSHOP PAGE
+   ===================== */
+#header .hub-badge {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#header .hub-badge img {
+  width: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.workshop-hero {
+  background: linear-gradient(135deg, #1b5088 0%, #246fb5 55%, #4d4d4d 100%);
+  padding: 140px 0 70px;
+}
+
+.workshop-hero .workshop-kicker {
+  display: block;
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.workshop-hero h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0 0 18px;
+}
+
+.workshop-hero .workshop-subtitle {
+  color: rgba(255,255,255,0.92);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 0 35px;
+}
+
+.workshop-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.workshop-facts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 30px;
+  padding: 10px 18px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.workshop-facts li i {
+  font-size: 15px;
+}
+
+.workshop-hero .white-button a {
+  display: inline-block;
+  background-color: #fff;
+  color: #246fb5;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.workshop-hero .white-button a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.placeholder-note {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  font-style: italic;
+}
+
+/* TBD NOTICE */
+.tbd-notice {
+  padding: 60px 0 80px;
+}
+
+.tbd-card {
+  background: #fff;
+  border: 1px dashed #cfe2f3;
+  border-radius: 14px;
+  padding: 45px 25px 35px;
+  height: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.tbd-card:hover {
+  transform: translateY(-5px);
+  border-color: #246fb5;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.tbd-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eef5fb;
+  color: #246fb5;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.tbd-kicker {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  margin-bottom: 8px;
+}
+
+.tbd-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #232323;
+  margin: 0 0 22px;
+}
+
+.coming-soon {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #246fb5;
+  padding: 7px 18px;
+  border-radius: 20px;
+}
+
+/* TOPIC CARDS */
+.topic-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 30px 25px;
+  height: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 30px;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.topic-card .topic-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #246fb5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.topic-card h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 10px;
+}
+
+.topic-card p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* SCHEDULE / TIMELINE */
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 110px;
+  width: 2px;
+  background: #e2e2e2;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding: 0 0 35px 0;
+}
+
+.timeline-time {
+  flex: 0 0 90px;
+  text-align: right;
+  font-weight: 700;
+  color: #246fb5;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 105px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #246fb5;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #246fb5;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #232323;
+  margin: 0 0 6px;
+}
+
+.timeline-speaker {
+  display: block;
+  font-size: 13px;
+  color: #246fb5;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.timeline-content p {
+  margin: 0;
+}
+
+.timeline-item.is-break .timeline-content h4 {
+  color: #4d4d4d;
+}
+
+.timeline-item.is-break::before {
+  background: #4d4d4d;
+  box-shadow: 0 0 0 2px #4d4d4d;
+}
+
+/* SPEAKERS */
+.speaker-card {
+  text-align: center;
+  padding: 35px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.speaker-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #246fb5, #4d4d4d);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.speaker-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #232323;
+  margin: 0 0 6px;
+}
+
+.speaker-role {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 14px;
+}
+
+.speaker-talk {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #246fb5;
+  background: #e8f1fa;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin-bottom: 14px;
+}
+
+.speaker-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* VENUE */
+.venue-info-list {
+  margin: 20px 0 20px;
+  padding: 0;
+}
+
+.venue-info-list li {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.venue-info-list li i {
+  color: #246fb5;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.venue-info-list li strong {
+  display: block;
+  color: #232323;
+}
+
+/* REGISTRATION */
+.register-box {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.register-box .about-title {
+  margin-bottom: 15px;
+}
+
+.register-deadline {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* HUB BRAND OVERRIDES — shared classes, scoped to this page only */
+#temas .section-heading span,
+#agenda .section-heading span,
+#oradores .section-heading span {
+  color: #4d4d4d;
+}
+
+#sobre-el-workshop .about-subtitle,
+#inscripcion .about-subtitle {
+  color: #246fb5;
+}
+
+#sobre-el-workshop .about-list li::before {
+  color: #246fb5;
+}
+
+#sede .contact-label {
+  color: #246fb5;
+}
+
+#sede .contact-email {
+  background: #246fb5;
+}
+
+#sede .contact-email:hover {
+  background: #1b5088;
+}
+
+#inscripcion .blue-button a {
+  background-color: #246fb5;
+  border-color: #246fb5;
+}
+
+#inscripcion .blue-button a:hover {
+  color: #246fb5;
+}
+
+@media (max-width: 767px) {
+  .workshop-hero {
+    padding: 120px 0 50px;
+  }
+
+  .workshop-hero h1 {
+    font-size: 28px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .timeline-time {
+    flex: none;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .timeline-item::before {
+    left: 1px;
+    top: 4px;
+  }
+
+  .timeline-content {
+    padding-left: 25px;
   }
 }
