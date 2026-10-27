@@ -2081,7 +2081,7 @@ footer .contact-info ul li a {
   font-size: 40px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  margin: 0 0 18px;
+  margin: 0;
 }
 
 .workshop-hero .workshop-event-name {
@@ -2091,28 +2091,17 @@ footer .contact-info ul li a {
   margin: 10px 0 0;
 }
 
-.workshop-hero .event-title-row {
-  display: flex;
+.workshop-logos {
+  display: inline-flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: 30px;
-  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 30px 0 34px;
 }
 
-.workshop-hero .event-title-text {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
-.workshop-hero .event-title-text h1 {
-  margin: 0;
-}
-
-.workshop-hero .ieee-cas-logo {
-  flex: 0 0 auto;
-  height: 190px;
+.workshop-logos img {
+  height: 48px;
   width: auto;
-  object-fit: contain;
 }
 
 .workshop-hero .workshop-subtitle {
@@ -2123,29 +2112,66 @@ footer .contact-info ul li a {
   margin: 0 0 35px;
 }
 
+@media (min-width: 992px) {
+  .workshop-hero .hero-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .workshop-hero .workshop-facts {
+    transform: translateY(-15px);
+  }
+}
+
 .workshop-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 35px;
-  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin: 0;
+  padding: 28px 30px;
+  list-style: none;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 16px;
 }
 
 .workshop-facts li {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.35);
-  border-radius: 30px;
-  padding: 10px 18px;
+  gap: 14px;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 1.4;
 }
 
-.workshop-facts li i {
-  font-size: 15px;
+.workshop-facts .fact-icon {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #246fb5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.workshop-facts small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2px;
+}
+
+@media (max-width: 991px) {
+  .workshop-facts {
+    margin-top: 35px;
+  }
 }
 
 .workshop-hero .white-button a {
@@ -2533,12 +2559,17 @@ footer .contact-info ul li a {
     font-size: 28px;
   }
 
-  .workshop-hero .event-title-row {
-    flex-wrap: wrap;
+  .workshop-logos {
+    gap: 20px;
   }
 
-  .workshop-hero .ieee-cas-logo {
-    height: 90px;
+  .workshop-logos img {
+    height: 40px;
+  }
+
+  .workshop-facts {
+    gap: 18px;
+    padding: 20px;
   }
 
   .timeline::before {
