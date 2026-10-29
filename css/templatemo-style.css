@@ -2086,9 +2086,10 @@ footer .contact-info ul li a {
 
 .workshop-hero .workshop-event-name {
   color: rgba(255,255,255,0.88);
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 700;
-  margin: 10px 0 0;
+  line-height: 1.3;
+  margin: 12px 0 0;
 }
 
 .workshop-logos {
@@ -2190,6 +2191,47 @@ footer .contact-info ul li a {
 .workshop-hero .white-button a:hover {
   background-color: transparent;
   color: #fff;
+}
+
+.workshop-hero .white-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.workshop-hero .white-button a.outline-btn {
+  background-color: transparent;
+  color: #fff;
+}
+
+.workshop-hero .white-button a.outline-btn:hover {
+  background-color: #fff;
+  color: #246fb5;
+}
+
+.program-download {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.program-download a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #246fb5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: 2px solid #246fb5;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.program-download a:hover {
+  background-color: #fff;
+  color: #246fb5;
 }
 
 .placeholder-note {
@@ -2561,6 +2603,10 @@ footer .contact-info ul li a {
 
   .workshop-logos {
     gap: 20px;
+  }
+
+  .workshop-hero .workshop-event-name {
+    font-size: 28px;
   }
 
   .workshop-logos img {
