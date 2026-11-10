@@ -2445,6 +2445,12 @@ footer .contact-info ul li a {
   margin: 0;
 }
 
+.timeline-content p.timeline-talk {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
 .timeline-item.is-break .timeline-content h4 {
   color: #4d4d4d;
 }
@@ -2499,15 +2505,72 @@ footer .contact-info ul li a {
   margin-bottom: 14px;
 }
 
-.speaker-talk {
-  display: inline-block;
+.speakers-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speakers-row::before,
+.speakers-row::after {
+  display: none;
+}
+
+.speakers-row:has(.speaker-bio[open]) {
+  align-items: flex-start;
+}
+
+.speakers-row > [class*="col-"] {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.speakers-row .speaker-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.speaker-degree {
+  display: block;
   font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.speaker-bio {
+  margin-top: auto;
+}
+
+.speaker-bio summary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
   font-weight: 600;
   color: #246fb5;
-  background: #e8f1fa;
+  border: 1px solid #246fb5;
   border-radius: 20px;
-  padding: 6px 14px;
-  margin-bottom: 14px;
+  padding: 5px 16px;
+  list-style: none;
+}
+
+.speaker-bio summary::-webkit-details-marker {
+  display: none;
+}
+
+.speaker-bio summary:hover,
+.speaker-bio[open] summary {
+  background: #246fb5;
+  color: #fff;
+}
+
+.speaker-card .speaker-bio p {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin: 14px 0 0;
 }
 
 .speaker-card p {
