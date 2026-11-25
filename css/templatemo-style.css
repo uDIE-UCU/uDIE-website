@@ -3114,6 +3114,28 @@ body.bpc-page {
   color: #00619b;
 }
 
+.bpc-flyer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 9px 22px;
+  border: 2px solid #5b6a48;
+  border-radius: 14px;
+  color: #5b6a48;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.bpc-flyer-link:hover,
+.bpc-flyer-link:focus {
+  background: #5b6a48;
+  color: #fff;
+  text-decoration: none;
+}
+
 .bpc-register-body p {
   margin: 8px 0 0;
   font-size: 14px;
