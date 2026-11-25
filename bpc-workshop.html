@@ -1,6 +1,6 @@
 <!-- bpc-workshop.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bpc-html">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/templatemo-style.css?v=2026-11-19e">
+        <link rel="stylesheet" href="css/templatemo-style.css?v=2026-11-25e">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
@@ -22,44 +22,38 @@
     </head>
 <body class="bpc-page">
 
-    <div class="wrap">
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <button id="primary-nav-button" type="button">Menu</button>
-                        <div class="logo"><a href="https://www.ucu.edu.uy/categoria/Departamento-de-Ingenieria-385">
-                            <img src="img/logo ucu.png" style="height: 60px; width: auto; object-fit: contain;" alt="microDIE Logo">
-                        </a></div>
+    <header class="bpc-nav" id="bpc-nav">
+        <div class="bpc-nav-inner">
+            <a href="#top" class="bpc-nav-logo is-mtts" aria-label="Back to top">
+                <img src="img/logo_mtts_horizontal_blue.png" alt="IEEE Microwave Theory and Technology Society (MTT-S)">
+            </a>
 
-                        <nav id="primary-nav" class="dropdown cf">
-                            <ul class="dropdown menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="index.html#services" class="scrollTo" data-scrollTo="services">About</a></li>
-                                <li><a href="people.html">People</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="publications.html">Publications</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="publications.html#internationalJournals" class="scrollTo" data-scrollTo="internationalJournals">International Journals</a></li>
-                                        <li><a href="publications.html#internationalConferences" class="scrollTo" data-scrollTo="internationalConferences">International Conferences</a></li>
-                                        <li><a href="publications.html#theses" class="scrollTo" data-scrollTo="theses">Theses</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Events</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="https://2025.ieee-cafe.org/" target="_blank" rel="noopener noreferrer">IEEE CAFE 2025</a></li>
-                                        <li><a href="workshop.html">Workshop - November 2026</a></li>
-                                        <li><a href="bpc-workshop.html">BPC Workshop - December 2026</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://www.ucu.edu.uy/categoria/Departamento-de-Ingenieria-385" class="menu-cta">UCU Engineering Department</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </div>
+            <nav class="bpc-nav-scroll" aria-label="Page sections">
+                <ul class="bpc-nav-links">
+                    <li><a href="#why">Why join</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#activities" class="bpc-nav-drop" id="bpc-activities-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="bpc-activities-menu">Activities<svg class="bpc-nav-caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    <li><a href="#montevideo">Montevideo</a></li>
+                    <li><a href="#tips">Travel tips</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://www.ucu.edu.uy/" class="bpc-nav-logo" target="_blank" rel="noopener noreferrer" aria-label="Universidad Católica del Uruguay (opens in a new tab)">
+                <img src="img/logo ucu.png" alt="Universidad Católica del Uruguay (UCU)">
+            </a>
+        </div>
+
+        <!-- Activities dropdown: outside the scrollable strip so it isn't clipped -->
+        <div class="bpc-nav-menu" id="bpc-activities-menu" role="menu" aria-labelledby="bpc-activities-toggle" hidden>
+            <a href="#3mpc" role="menuitem">3-Minute Presentation Competition (3MPC)</a>
+            <a href="#proposal" role="menuitem">Proposal Writing Competition (PWC)</a>
+            <a href="#career-passport" role="menuitem">Career Passport Mentoring</a>
+            <a href="#speed-mentoring" role="menuitem">Speed Mentoring</a>
+            <a href="#activities" role="menuitem" class="bpc-nav-menu-all">View all activities &rarr;</a>
+        </div>
+    </header>
 
     <section class="workshop-hero bpc-hero" id="top">
         <div class="container">
@@ -73,12 +67,13 @@
                     <div class="workshop-logos">
                         <img src="img/logo_ieee_white.png" alt="IEEE - Advancing Technology for Humanity">
                         <img src="img/logo_mtts_white.png" alt="IEEE Microwave Theory and Technology Society (MTT-S)">
-                        <img src="img/logo_mtts_bpc_white.png" alt="IEEE MTT-S Broadening Participation Committee">
+                        <img src="img/logo_mtts_bpc_white.png" class="hero-logo-bpc" alt="IEEE MTT-S Broadening Participation Committee">
+                        <img src="img/logo ucu.png" class="hero-logo-ucu" alt="Universidad Católica del Uruguay (UCU)">
                     </div>
 
                     <div class="white-button">
                         <a href="https://tinyurl.com/BPC-Uruguay2026" target="_blank" rel="noopener noreferrer">Register for free</a>
-                        <a href="#about" class="scrollTo outline-btn" data-scrollTo="about">Explore the workshop</a>
+                        <a href="#about" class="outline-btn">Explore the workshop</a>
                     </div>
                 </div>
 
@@ -109,20 +104,19 @@
     <section class="bpc-section" id="why">
         <div class="container">
             <h2 class="bpc-heading">Why should you join us in this workshop?</h2>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="bpc-greenbox">
-                        <p>Join students, researchers and professionals in Montevideo for the IEEE MTT-S Broadening Participation Workshop. Explore RF, microwave, millimeter-wave and THz technologies through technical talks, interactive activities and opportunities to connect with international experts.</p>
-                        <p>The workshop aims to bridge theory and practice, encourage student participation and foster collaboration among academic communities in Uruguay and across Latin America.</p>
-                    </div>
+            <div class="bpc-why-grid">
+                <div class="bpc-why-text">
+                    <p>Join students, researchers and professionals in Montevideo for the <strong>IEEE MTT-S Broadening Participation Workshop</strong>. Explore RF, microwave, millimeter-wave and THz technologies through technical talks, interactive activities and opportunities to connect with international experts.</p>
+                    <p>The December 2026 workshop in <strong>Montevideo, Uruguay</strong>, brings together a regional community to share knowledge, exchange ideas and encourage future careers in RF and microwave engineering.</p>
+                    <p>The workshop aims to bridge theory and practice, encourage student participation and foster collaboration among academic communities in Uruguay and across Latin America.</p>
+                </div>
 
-                    <div class="bpc-register" id="registration">
-                        <img src="img/bpc_qr_registro.png" class="bpc-register-qr" alt="QR code to the BPC Workshop Montevideo 2026 registration form">
-                        <div class="bpc-register-body">
-                            <h3>Register here for free</h3>
-                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-register-link" target="_blank" rel="noopener noreferrer">tinyurl.com/BPC-Uruguay2026</a>
-                            <p>One form for the workshop and all its activities.</p>
-                        </div>
+                <div class="bpc-register" id="registration">
+                    <img src="img/bpc_qr_registro.png" class="bpc-register-qr" alt="QR code to the BPC Workshop Montevideo 2026 registration form">
+                    <div class="bpc-register-body">
+                        <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-register-cta" target="_blank" rel="noopener noreferrer">Register here for free</a>
+                        <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-register-link" target="_blank" rel="noopener noreferrer">tinyurl.com/BPC-Uruguay2026</a>
+                        <p>One form for the workshop and all its activities.</p>
                     </div>
                 </div>
             </div>
@@ -141,7 +135,7 @@
                 </div>
                 <div class="bpc-band bpc-band-white">
                     <h3>Student competitions</h3>
-                    <p>Proposed activities include a Three Minute Presentation Competition (3MPC) and a proposal writing workshop &amp; competition. Final program, rules and registration details will be announced.</p>
+                    <p>Proposed activities include a <strong>Three Minute Presentation Competition (3MPC)</strong> and a <strong>Proposal Writing Workshop &amp; Competition (PWC)</strong>. Final program, rules and registration details will be announced.</p>
                 </div>
                 <div class="bpc-band bpc-band-green">
                     <h3>Career guidance &amp; mentoring sessions</h3>
@@ -149,7 +143,7 @@
                 </div>
             </div>
 
-            <p class="bpc-collab">MTT-S BPC Workshop in collaboration with:<br>MGA, YP, MarCom, Education, Publication Committees</p>
+            <p class="bpc-collab">MTT-S BPC Workshop in collaboration with MGA, YP, MarCom, Education, Publication Committees</p>
         </div>
     </section>
 
@@ -175,7 +169,7 @@
                                 <h4>Anding Zhu</h4>
                                 <span>IEEE Fellow</span>
                                 <span>2026 MTT-S President</span>
-                                <span>University of Hong Kong, China</span>
+                                <span>The Chinese University of Hong Kong, China</span>
                             </div>
                         </div>
                         <div class="bpc-person">
@@ -184,7 +178,16 @@
                                 <h4>Debabani Choudhury</h4>
                                 <span>IEEE Fellow</span>
                                 <span>MTT-S BPC Chair</span>
-                                <span>SaraTech LLC, USA</span>
+                                <span>SeraTech LLC, USA</span>
+                            </div>
+                        </div>
+                        <div class="bpc-person">
+                            <div class="bpc-person-photo"><img src="img/bpc_olga_boric_lubecke.jpg" alt="Olga Boric-Lubecke"></div>
+                            <div class="bpc-person-info">
+                                <h4>Olga Boric-Lubecke</h4>
+                                <span>IEEE Fellow</span>
+                                <span>MTT-S BPC Vice Chair</span>
+                                <span>University of Hawaii Manoa, USA</span>
                             </div>
                         </div>
                         <div class="bpc-person">
@@ -227,10 +230,11 @@
                     <h3 class="bpc-panel-heading">Regional Speakers</h3>
                     <div class="bpc-people">
                         <div class="bpc-person">
-                            <div class="bpc-person-photo"><i class="fa fa-user"></i></div>
+                            <div class="bpc-person-photo"><img src="img/bpc_benigno_rodriguez.jpg" alt="Benigno Rodríguez"></div>
                             <div class="bpc-person-info">
-                                <h4>Uruguay Speaker</h4>
-                                <span>TBD</span>
+                                <h4>Benigno Rodríguez</h4>
+                                <span>Universidad de la República</span>
+                                <span>Uruguay</span>
                             </div>
                         </div>
                         <div class="bpc-person">
@@ -254,6 +258,23 @@
                             <div class="bpc-person-info">
                                 <h4>Marcel Keschner</h4>
                                 <span>Panelist, 3MPC Judge &amp; Moderator</span>
+                                <span>Uruguay</span>
+                            </div>
+                        </div>
+                        <div class="bpc-person">
+                            <div class="bpc-person-photo"><img src="img/bpc_steven_vinueza.jpg" alt="Steven Vinueza"></div>
+                            <div class="bpc-person-info">
+                                <h4>Steven Vinueza</h4>
+                                <span>Universidad Internacional del Ecuador</span>
+                                <span>Ecuador</span>
+                            </div>
+                        </div>
+                        <div class="bpc-person">
+                            <div class="bpc-person-photo"><img src="img/bpc_marcelo_perotoni.jpg" alt="Marcelo Bender Perotoni"></div>
+                            <div class="bpc-person-info">
+                                <h4>Marcelo Bender Perotoni</h4>
+                                <span>Universidad Federal del ABC</span>
+                                <span>São Paulo, Brazil</span>
                             </div>
                         </div>
                     </div>
@@ -337,22 +358,41 @@
         <div class="container">
             <h2 class="bpc-heading">Competitions &amp; activities</h2>
 
-            <article class="bpc-activity" id="3mpc">
+            <div class="bpc-act-tabs" role="tablist" aria-label="Choose an activity">
+                <button type="button" role="tab" id="acttab-3mpc" aria-controls="3mpc" aria-selected="true">
+                    <span class="bpc-act-tab-name">3MPC</span>
+                    <span class="bpc-act-tab-desc">3-Minute Presentation Competition</span>
+                </button>
+                <button type="button" role="tab" id="acttab-proposal" aria-controls="proposal" aria-selected="false" tabindex="-1">
+                    <span class="bpc-act-tab-name">PWC</span>
+                    <span class="bpc-act-tab-desc">Proposal Writing Competition</span>
+                </button>
+                <button type="button" role="tab" id="acttab-career-passport" aria-controls="career-passport" aria-selected="false" tabindex="-1">
+                    <span class="bpc-act-tab-name">Career Passport</span>
+                    <span class="bpc-act-tab-desc">Mentoring with senior MTT-S members</span>
+                </button>
+                <button type="button" role="tab" id="acttab-speed-mentoring" aria-controls="speed-mentoring" aria-selected="false" tabindex="-1">
+                    <span class="bpc-act-tab-name">Speed Mentoring</span>
+                    <span class="bpc-act-tab-desc">Short sessions with several mentors</span>
+                </button>
+            </div>
+
+            <article class="bpc-activity" id="3mpc" role="tabpanel" aria-labelledby="acttab-3mpc" tabindex="0">
                 <div class="bpc-activity-body">
                     <h3 class="bpc-activity-title is-sage">3-Minute Presentation Competition (3MPC)</h3>
-                    <p>In three minutes or less, using only one static slide, and no other props explain your technical ideas or research to non specialist judges. Any topic related to innovation and technology is accepted in both languages.</p>
                     <div class="row">
                         <div class="col-md-6">
+                            <p class="bpc-activity-intro">In three minutes or less, using only one static slide, and no other props explain your technical ideas or research to non specialist judges. Any topic related to innovation and technology is accepted in both languages.</p>
+                            <div class="bpc-categories">
+                                <span>English Category</span>
+                                <span>Spanish Category</span>
+                            </div>
                             <h4 class="bpc-subtitle">Judgement criteria</h4>
                             <ul class="bpc-list">
                                 <li>Clarity for a non-technical audience</li>
                                 <li>Storytelling and structure</li>
                                 <li>Overall impact and delivery</li>
                             </ul>
-                            <div class="bpc-categories">
-                                <span>English<br>Category</span>
-                                <span>Spanish<br>Category</span>
-                            </div>
                         </div>
                         <div class="col-md-6">
                             <ul class="bpc-dates">
@@ -362,16 +402,16 @@
                                 <li><span>In-person final</span><strong>December 7, 2026</strong></li>
                                 <li><span>Awards ceremony</span><strong>December 8, 2026</strong></li>
                             </ul>
-                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register here</a>
+                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register for 3MPC</a>
                         </div>
                     </div>
                 </div>
                 <p class="bpc-activity-banner">Participate in the event competitions and win prizes!</p>
             </article>
 
-            <article class="bpc-activity" id="proposal">
+            <article class="bpc-activity" id="proposal" role="tabpanel" aria-labelledby="acttab-proposal" tabindex="0" hidden>
                 <div class="bpc-activity-body">
-                    <h3 class="bpc-activity-title">Proposal Writing Competition</h3>
+                    <h3 class="bpc-activity-title is-sage">Proposal Writing Competition (PWC)</h3>
                     <p>The <strong>Proposal Writing Competition</strong> is an interactive hands-on workshop where participants work in collaborative teams of three. This interactive workshop will outline strategies for paper acceptance at MTT-S sponsored conferences and journals, and discuss requirements for conference papers expansion into journal publications.</p>
                     <p>This activity is particularly relevant for scholarship applications, research funding applications, project planning, and impact communication.</p>
                     <div class="row">
@@ -388,16 +428,16 @@
                                 <li><span>Competition</span><strong>December 7, 2026</strong></li>
                                 <li><span>Awards Ceremony</span><strong>December 8, 2026</strong></li>
                             </ul>
-                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register here</a>
+                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register for PWC</a>
                         </div>
                     </div>
                 </div>
                 <p class="bpc-activity-banner">Improve your proposals by attending this workshop!</p>
             </article>
 
-            <article class="bpc-activity" id="career-passport">
+            <article class="bpc-activity" id="career-passport" role="tabpanel" aria-labelledby="acttab-career-passport" tabindex="0" hidden>
                 <div class="bpc-activity-body">
-                    <h3 class="bpc-activity-title">Career Passport Mentoring</h3>
+                    <h3 class="bpc-activity-title is-sage">Career Passport Mentoring</h3>
                     <p><strong>Career Passport</strong> is a 90-minute mentoring session at the IEEE MTT-S BPC Workshop in Montevideo, where students and early-career engineers rotate through 4 small tables hosted by senior MTT-S members and collect a stamp at each one.</p>
                     <p>Mentors stamp the passport only after a real question, so every stop turns into an actual conversation. We close with <strong>one-sentence</strong> takeaways from attendees, a <strong>wisdom wall</strong>, a <strong>raffle</strong> for full passports and a group photo. The idea is simple: give participants, many of them from smaller universities and attending an IEEE event for the first time, an easy way to talk face to face with people they usually only see on stage.</p>
                     <div class="row">
@@ -414,68 +454,153 @@
                             <ul class="bpc-dates">
                                 <li><span>Mentoring Session</span><strong>December 8, 2026</strong></li>
                             </ul>
-                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register here</a>
+                            <a href="https://tinyurl.com/BPC-Uruguay2026" class="bpc-btn" target="_blank" rel="noopener noreferrer"><i class="fa fa-qrcode"></i> Register for Career Passport</a>
                         </div>
                     </div>
                 </div>
                 <p class="bpc-activity-banner">Talk to mentors, fill your passport, win raffle prizes!</p>
             </article>
 
-            <p class="bpc-collab">MTT-S BPC Workshop in collaboration with:<br>MGA, YP, MarCom, Education, Publication Committees</p>
+            <article class="bpc-activity" id="speed-mentoring" role="tabpanel" aria-labelledby="acttab-speed-mentoring" tabindex="0" hidden>
+                <div class="bpc-activity-body">
+                    <h3 class="bpc-activity-title is-sage">Speed Mentoring</h3>
+                    <p><strong>Speed Mentoring</strong> is an interactive mentoring activity at the IEEE MTT-S BPC Workshop in Montevideo, designed to connect students and early-career engineers with experienced professionals and leaders in the microwave and RF community.</p>
+                    <p>Participants rotate through a series of <strong>short mentoring sessions</strong>, each hosted by a different senior MTT-S member or invited professional. At each stop, they have the opportunity to introduce themselves, <strong>ask questions, seek career advice, and learn from the mentor's personal and professional experiences.</strong></p>
+                    <p>The rotations create an informal and dynamic environment where participants can interact with several mentors in a limited amount of time, gaining different perspectives on <strong>career development, research, leadership, industry opportunities</strong>, and professional growth.</p>
+                    <ul class="bpc-dates">
+                        <li><span>Mentoring Session</span><strong>December 7, 2026</strong></li>
+                    </ul>
+                </div>
+                <p class="bpc-activity-banner">Create meaningful connections, make mentorship more accessible</p>
+            </article>
+
+            <p class="bpc-collab">MTT-S BPC Workshop in collaboration with MGA, YP, MarCom, Education, Publication Committees</p>
         </div>
     </section>
 
-    <section class="bpc-section bpc-section-blue" id="mtts">
+    <section class="bpc-section bpc-section-blue" id="organizers">
         <div class="container">
-            <div class="bpc-logo-row">
-                <img src="img/logo_ieee_blue.png" alt="IEEE - Advancing Technology for Humanity">
-                <img src="img/logo_mtts_blue.png" alt="IEEE Microwave Theory and Technology Society (MTT-S)">
-                <img src="img/logo_mtts_bpc_blue.png" alt="IEEE MTT-S Broadening Participation Committee">
+            <h2 class="bpc-heading">About the organizers</h2>
+            <div class="bpc-org-grid">
+                <a class="bpc-org-logo" href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer" style="--h:92px" aria-label="Institute of Electrical and Electronics Engineers (opens in a new tab)">
+                    <img src="img/logo_ieee_blue.png" alt="">
+                    <span class="bpc-org-tip" aria-hidden="true">Institute of Electrical and Electronics Engineers<svg class="bpc-org-ext" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1h6v6M9 1L1 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </a>
+                <a class="bpc-org-logo" href="https://mtt.org/" target="_blank" rel="noopener noreferrer" style="--h:112px" aria-label="IEEE Microwave Theory and Technology Society (opens in a new tab)">
+                    <img src="img/logo_mtts_blue.png" alt="">
+                    <span class="bpc-org-tip" aria-hidden="true">IEEE Microwave Theory and Technology Society<svg class="bpc-org-ext" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1h6v6M9 1L1 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </a>
+                <a class="bpc-org-logo" href="https://mtt.org/bpc/" target="_blank" rel="noopener noreferrer" style="--h:124px" aria-label="MTT-S Broadening Participation Committee (opens in a new tab)">
+                    <img src="img/logo_mtts_bpc_blue.png" alt="">
+                    <span class="bpc-org-tip" aria-hidden="true">MTT-S Broadening Participation Committee<svg class="bpc-org-ext" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1h6v6M9 1L1 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </a>
             </div>
-            <h2 class="bpc-heading">About IEEE MTT-S</h2>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="bpc-greenbox">
-                        <p><strong>IEEE Microwave Theory &amp; Technology Society (MTT-S)</strong> advances microwave theory and its applications, from radio frequency to millimeter-wave and terahertz technologies. Through its Broadening Participation Committee (BPC), MTT-S promotes inclusive access to technical education, professional development and research opportunities.</p>
-                        <p>The December 2026 workshop in Montevideo, Uruguay, brings together a regional community to share knowledge, exchange ideas and encourage future careers in RF and microwave engineering.</p>
-                    </div>
-                </div>
+            <p class="bpc-org-text"><strong>IEEE Microwave Theory &amp; Technology Society (MTT-S)</strong> advances microwave theory and its applications, from radio frequency to millimeter-wave and terahertz technologies. Through its <strong>Broadening Participation Committee (BPC)</strong>, MTT-S promotes inclusive access to technical education, professional development and research opportunities. <a class="bpc-learn-more" href="https://mtt.org/" target="_blank" rel="noopener noreferrer">Learn more about IEEE MTT-S<span aria-hidden="true"> &#8599;</span></a></p>
+
+            <p class="bpc-org-sub">Organizing university</p>
+            <div class="bpc-org-grid">
+                <a class="bpc-org-logo" href="https://www.ucu.edu.uy/" target="_blank" rel="noopener noreferrer" style="--h:72px" aria-label="Universidad Católica del Uruguay (opens in a new tab)">
+                    <img src="img/logo ucu.png" alt="">
+                    <span class="bpc-org-tip" aria-hidden="true">Universidad Católica del Uruguay<svg class="bpc-org-ext" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1h6v6M9 1L1 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </a>
+            </div>
+            <p class="bpc-org-text"><strong>Universidad Católica del Uruguay (UCU)</strong> is one of the two organizing universities of the IEEE MTT-S BPC Workshop 2026 in Montevideo. It promotes education, innovation and research in engineering and technology, fostering collaboration between students, faculty and industry professionals. Its participation in the workshop encourages knowledge exchange and professional development in RF, microwave and telecommunications technologies.</p>
+            <div class="bpc-photo-pair">
+                <img src="img/bpc_ucu_sign.jpg" alt="Universidad Católica del Uruguay sign and historic building">
+                <img src="img/bpc_ucu_building.jpg" alt="Universidad Católica del Uruguay courtyard">
             </div>
         </div>
     </section>
 
-    <section class="bpc-section" id="university">
-        <div class="container">
-            <h2 class="bpc-heading">Organizing university</h2>
-            <p class="bpc-bluebox">Universidad Católica del Uruguay (UCU) is the participating university in the Montevideo edition of the IEEE MTT-S BPC Workshop.</p>
-            <div class="row bpc-split">
-                <div class="col-md-6">
-                    <img src="img/bpc_ucu_sign.jpg" class="bpc-circle-img" alt="Universidad Católica del Uruguay sign and historic building">
-                </div>
-                <div class="col-md-6">
-                    <p class="bpc-split-text is-right"><strong>Universidad Católica del Uruguay (UCU)</strong> brings academic experience in engineering, research and education, connecting students and faculty with the workshop.</p>
-                </div>
-            </div>
-            <img src="img/bpc_ucu_building.jpg" class="bpc-wide-img" alt="Universidad Católica del Uruguay building">
-        </div>
-    </section>
-
-    <section class="bpc-section bpc-section-blue" id="montevideo">
+    <section class="bpc-section" id="montevideo">
         <div class="container">
             <h2 class="bpc-heading">About Montevideo</h2>
-            <p class="bpc-bluebox"><strong>Montevideo</strong>, the capital of Uruguay, stretches along the Río de la Plata. Its waterfront, historic neighborhoods, cultural venues and universities make it a welcoming destination for students, academics and visitors.</p>
-            <div class="row bpc-split">
-                <div class="col-md-6 col-md-push-6">
-                    <img src="img/bpc_palacio_salvo.jpg" class="bpc-circle-img" alt="Palacio Salvo, Plaza Independencia, Montevideo">
+            <div class="bpc-city">
+                <div class="bpc-city-text">
+                    <p><strong>Montevideo</strong>, the capital of Uruguay, stretches along the Río de la Plata. Its waterfront, historic neighborhoods, cultural venues and universities make it a welcoming destination for students, academics and visitors.</p>
+                    <p><strong>Plaza Independencia</strong> is one of Montevideo's most recognizable public squares. It is home to the monument to José Artigas and surrounded by landmarks including Palacio Salvo, Palacio Estévez and the nearby Teatro Solís, which opened in 1856.</p>
+                    <p>Visitors can explore Ciudad Vieja, walk along the Rambla facing the Río de la Plata and discover the city's music, architecture and cultural traditions. Montevideo offers an inviting setting for an international engineering workshop.</p>
                 </div>
-                <div class="col-md-6 col-md-pull-6">
-                    <div class="bpc-split-text">
-                        <p><strong>Plaza Independencia</strong> is one of Montevideo's most recognizable public squares. It is home to the monument to José Artigas and surrounded by landmarks including Palacio Salvo, Palacio Estévez and the nearby Teatro Solís, which opened in 1856.</p>
-                        <p>Visitors can explore Ciudad Vieja, walk along the Rambla facing the Río de la Plata and discover the city's music, architecture and cultural traditions. Montevideo offers an inviting setting for an international engineering workshop.</p>
+                <img src="img/bpc_palacio_salvo.jpg" class="bpc-city-img" alt="Palacio Salvo, Plaza Independencia, Montevideo">
+            </div>
+            <img src="img/bpc_rambla.jpg" class="bpc-wide-img" alt="Montevideo's Rambla along the Río de la Plata at sunset">
+        </div>
+    </section>
+
+    <section class="bpc-section bpc-section-blue" id="discover">
+        <div class="container">
+            <span class="bpc-tag">December 2026 | Montevideo, Uruguay</span>
+            <h2 class="bpc-heading">Discover Montevideo</h2>
+            <p class="bpc-lead">Explore the charm of Uruguay's capital! Discover its historic landmarks, beautiful coastline, cultural attractions and traditional cuisine during your stay in Montevideo.</p>
+            <div class="bpc-places">
+                <div class="bpc-place">
+                    <img src="img/bpc_plaza_independencia.webp" alt="Plaza Independencia &amp; Palacio Salvo">
+                    <div class="bpc-place-info">
+                        <h4>Plaza Independencia &amp; Palacio Salvo</h4>
+                        <p>Discover Montevideo's iconic landmark and its most important historic square.</p>
+                    </div>
+                </div>
+                <div class="bpc-place">
+                    <img src="img/bpc_pocitos.webp" alt="Rambla &amp; Pocitos Beach">
+                    <div class="bpc-place-info">
+                        <h4>Rambla &amp; Pocitos Beach</h4>
+                        <p>Enjoy a relaxing waterfront walk, beautiful sunsets and views of the Río de la Plata.</p>
+                    </div>
+                </div>
+                <div class="bpc-place">
+                    <img src="img/bpc_ciudad_vieja.webp" alt="Ciudad Vieja">
+                    <div class="bpc-place-info">
+                        <h4>Ciudad Vieja</h4>
+                        <p>Explore historic streets, charming cafés, museums and local artisan shops.</p>
+                    </div>
+                </div>
+                <div class="bpc-place">
+                    <img src="img/bpc_teatro_solis.webp" alt="Teatro Solís">
+                    <div class="bpc-place-info">
+                        <h4>Teatro Solís</h4>
+                        <p>Visit one of Uruguay's most iconic theaters and discover its architectural and cultural heritage.</p>
                     </div>
                 </div>
             </div>
-            <img src="img/bpc_rambla.jpg" class="bpc-wide-img" alt="Montevideo's Rambla along the Río de la Plata at sunset">
+            <p class="bpc-discover-link"><a href="https://www.descubrimontevideo.uy/" target="_blank" rel="noopener noreferrer">www.descubrimontevideo.uy</a></p>
+        </div>
+    </section>
+
+    <section class="bpc-section bpc-section-lime" id="tips">
+        <div class="container">
+            <span class="bpc-tag">December 2026 | Montevideo, Uruguay</span>
+            <h2 class="bpc-heading bpc-heading-magenta">Travel &amp; safety tips</h2>
+            <p class="bpc-lead">Enjoy your stay in Montevideo! Here are some practical recommendations for a safe and pleasant visit.</p>
+            <div class="bpc-tips">
+                <div class="bpc-tip">
+                    <div class="bpc-tip-head">
+                        <h4>Safe mobility</h4>
+                        <img src="img/bpc_tip_taxi.webp" alt="">
+                    </div>
+                    <p>Use licensed taxis or trusted ride-hailing apps. For public transportation, use the Cómo Ir app to check bus routes and schedules. Plan your trips in advance.</p>
+                </div>
+                <div class="bpc-tip">
+                    <div class="bpc-tip-head">
+                        <h4>Personal belongings</h4>
+                        <img src="img/bpc_tip_belongings.webp" alt="">
+                    </div>
+                    <p>Keep your personal belongings secure, especially in crowded areas. Avoid leaving valuable items unattended and keep a digital copy of your passport.</p>
+                </div>
+                <div class="bpc-tip">
+                    <div class="bpc-tip-head">
+                        <h4>Exploring Montevideo</h4>
+                        <img src="img/bpc_tip_exploring.webp" alt="">
+                    </div>
+                    <p>Stay aware of your surroundings, especially in busy tourist areas. Use well-lit streets at night and apply sunscreen when spending time outdoors during December.</p>
+                </div>
+                <div class="bpc-tip">
+                    <div class="bpc-tip-head">
+                        <h4>Emergency contacts</h4>
+                        <img src="img/bpc_tip_emergency.webp" alt="">
+                    </div>
+                    <p>In case of an emergency, dial 911. Keep your travel insurance information available and contact the workshop organizing team if you need assistance during your stay.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -532,33 +657,7 @@
     <script src="js/main.js"></script>
     <script src="js/scrollTop.js"></script>
 
-    <script>
-        // Speakers side menu: one panel visible at a time
-        (function () {
-            var tabs = Array.prototype.slice.call(document.querySelectorAll('.bpc-tablist [role="tab"]'));
-
-            function select(tab) {
-                tabs.forEach(function (t) {
-                    var active = t === tab;
-                    t.setAttribute('aria-selected', active ? 'true' : 'false');
-                    t.tabIndex = active ? 0 : -1;
-                    document.getElementById(t.getAttribute('aria-controls')).hidden = !active;
-                });
-            }
-
-            tabs.forEach(function (tab, i) {
-                tab.addEventListener('click', function () { select(tab); });
-                tab.addEventListener('keydown', function (e) {
-                    var step = (e.key === 'ArrowDown' || e.key === 'ArrowRight') ? 1 : (e.key === 'ArrowUp' || e.key === 'ArrowLeft') ? -1 : 0;
-                    if (!step) return;
-                    e.preventDefault();
-                    var next = tabs[(i + step + tabs.length) % tabs.length];
-                    select(next);
-                    next.focus();
-                });
-            });
-        })();
-    </script>
+    <script src="js/bpc-workshop.js?v=2026-11-25c"></script>
 
 </body>
 </html>
